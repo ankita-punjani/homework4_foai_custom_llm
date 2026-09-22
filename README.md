@@ -144,6 +144,24 @@ Sources: [tokenization.json](experiments/starter/run/tokenization.json) · [insp
 4. **Probabilities before vs after, for the prefix "the customer".** Before training, the top prediction was *customer* at 1.6%, which is close to uniform (1/136 = 0.7%). After training: ***reviewed* 17.8%, *recommended* 17.1%, *ordered* 16.9%, *selected* 16.3%, *compared* 16.0%**. These are almost exactly 1/6 each. The corpus template is `the {buyer-word} {one of 6 verbs} the {product} after checking the price .`, so the model learned both *which* words can follow and *how evenly* they are spread.
 5. **Attention.** For the same prefix, block 1, head 1 gives the *customer* position these weights: **0.485 on `<BOS>`, 0.423 on *the*, 0.092 on itself**. Each position builds its next-token prediction from a weighted mix of the vectors at itself and **earlier** positions only. A causal mask sets future positions to −∞ before the softmax, so a prediction can never peek at the word it is supposed to predict. The expanded model's head instead puts 0.764 on *customer* itself. The same architecture learned a different use for this head.
 
+### The embedding viewer: *customer* before and after training
+
+These are screenshots of the supplied [`embedding-viewer.html`](embedding-viewer.html), unmodified, with each run's `checkpoint.json` loaded through its **Open your checkpoint** button. The images are in [experiments/embedding_viewer/](experiments/embedding_viewer/). I captured them in headless Chrome with [`capture_viewer.sh`](experiments/embedding_viewer/capture_viewer.sh), which feeds the checkpoint through that same file input and regenerates the images exactly.
+
+| Starter: before training (random) | Starter: after 3,000 steps |
+|---|---|
+| ![starter before](experiments/embedding_viewer/starter_before.png) | ![starter after](experiments/embedding_viewer/starter_after.png) |
+
+| Expanded: after 3,000 steps | Expanded: "Show movement" (start → end of every word) |
+|---|---|
+| ![expanded after](experiments/embedding_viewer/expanded_after.png) | ![expanded movement](experiments/embedding_viewer/expanded_trails.png) |
+
+What the viewer shows:
+- **Before training**, every vector sits in one tight ball near the centre. The initial values are tiny random numbers (std 0.02). *customer*'s "closest" words, *bus* 0.213, *educator* 0.203 and *helped* 0.202, are meaningless coincidences.
+- **After training**, the words have spread out. *customer* sits in a tight group with **shopper 0.978, client 0.977 and buyer 0.977** in the starter run, and with **client 0.978, shopper 0.974 and consumer 0.973** in the expanded run. These are the same numbers I computed independently above.
+- **Movement lines** connect each word's start and end points. Every word travels outward from the random ball, and *customer* moved a distance of 0.661 (starter) or 0.588 (expanded) in the full 64-number space.
+- **The 3D picture is only a partial view.** PCA squeezes 64 dimensions into 3 and keeps only **40.7%** (starter) or **22.9%** (expanded) of the variation. The expanded model's 410 words need more dimensions to separate, so more is lost. Dots that look close in 3D can be far apart in 64D, so the neighbour scores (cosine similarity over all 64 numbers) are the trustworthy measure.
+
 <details><summary><b>Starter run: all 64 numbers of <i>customer</i> (ID 28) before and after training</b></summary>
 
 ```text
@@ -401,7 +419,7 @@ mv corpus/extension /tmp/extension && .venv/bin/python run_notebook.py --steps 3
 .venv/bin/python make_extension_corpus.py && .venv/bin/python check_leakage.py --output results/leakage.json && .venv/bin/python run_notebook.py --steps 3000 --prediction experiments/expanded/prediction.md --output results/expanded.ipynb
 ```
 
-Each run writes a new timestamped folder in `llm_runs/`, which is git-ignored. I moved mine to `experiments/`. The notebook also still opens in Colab or Jupyter: set section 1 and Run All. To view embeddings, open [`embedding-viewer.html`](embedding-viewer.html), choose **Open your checkpoint**, and load either run's `checkpoint.json`.
+Each run writes a new timestamped folder in `llm_runs/`, which is git-ignored. I moved mine to `experiments/`. The notebook also still opens in Colab or Jupyter: set section 1 and Run All. To view embeddings, open [`embedding-viewer.html`](embedding-viewer.html), choose **Open your checkpoint**, and load either run's `checkpoint.json`. To regenerate the screenshots, run `zsh experiments/embedding_viewer/capture_viewer.sh` (needs Google Chrome and `pip install pillow`).
 
 ## 8. What I learned
 
@@ -435,4 +453,5 @@ experiments/smoke_test/             10-step setup run
 experiments/starter/                experiment 1: prediction, executed notebook, run folder + ZIP
 experiments/expanded/               experiment 2: same, plus leakage report and chat evidence
 experiments/analysis/               probes and seed check
+experiments/embedding_viewer/       viewer screenshots for both runs + the script that captures them
 ```
