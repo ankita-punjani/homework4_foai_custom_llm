@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+# Types four prompts into the real, unmodified chat.py (expanded-corpus model) and quits.
+# Usage (from the repo root): expect experiments/expanded/chat/chat_demo.exp
+set timeout 60
+spawn .venv/bin/python chat.py --model experiments/expanded/run/model.pt --transcript experiments/expanded/chat/chat_transcript.json
+foreach prompt {
+    "the report about the nurse"
+    "the pen is not purple . it is green . the pen is"
+    "the shelf is above the sofa . the sofa is"
+    "what is the capital of france ?"
+} {
+    expect "You: "
+    sleep 0.6
+    send -- "$prompt\r"
+}
+expect "You: "
+send -- "/quit\r"
+expect eof

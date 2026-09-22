@@ -9,3 +9,7 @@ names.txt
 
 /results/
 /chat_transcript.json
+
+# My corpus-extension teaching files are my own synthetic text and are published on purpose.
+!/corpus/extension/
+.parked_extension/

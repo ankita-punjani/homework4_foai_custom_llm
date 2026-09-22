@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "file": "extension/grammar.txt",
+      "bytes": 7044,
+      "sha256": "bd96c1ecd41489e3f15ce0a4b22f7193ebc8992cb59ed07904e4d0ff94fa44bd",
+      "warnings": [],
+      "characters": 7044,
+      "passages": 300,
+      "unique_passages": 300,
+      "preview": "many farmers were outside .\nthe owls are here .\nyesterday i cleaned .\nright now the girl is cleaning .\nright now they are visiting .\nright now the farmer is walking .\nyesterday the girl climbed .\nevery day she paints .\nyesterday our baker jumped .\nmany pilots were here .\nshe likes to look .\nshe is c"
+    },
+    {
+      "file": "extension/negation.txt",
+      "bytes": 20852,
+      "sha256": "9df9c5c4681080b86b5c99ed05ddc2c1a6740eecaa5b8120d99c3a5e1d9f4925",
+      "warnings": [],
+      "characters": 20852,
+      "passages": 300,
+      "unique_passages": 300,
+      "preview": "the pen is not blue.it is green.the pen is green.\nthe fence is not brown.it is red.the fence is red.\nthe wall is not gray.it is green.the wall is green.\nthe chair is not black.it is pink.the chair is pink.\nwe thought the balloon was yellow , but it was not yellow.it was green.the balloon was green.\n"
+    },
+    {
+      "file": "extension/opposites.txt",
+      "bytes": 15575,
+      "sha256": "996cdb187c1cdd35b21adfab1b08f92699ec382ce45b78c6f1c06d018dbd62ab",
+      "warnings": [],
+      "characters": 15575,
+      "passages": 300,
+      "unique_passages": 300,
+      "preview": "one box was big while the other was small .\nin the morning the road felt full , and at night it felt empty .\nthe field was full in summer but empty in winter .\nbefore noon the garden felt loud , and after sunset it felt quiet .\nbefore noon the road felt noisy , and after sunset it felt quiet .\nin th"
+    },
+    {
+      "file": "extension/spatial.txt",
+      "bytes": 19019,
+      "sha256": "8cab4d6bb90f28559660bc0960e991956dbe6cfb252cd9aa185a9adf197465be",
+      "warnings": [],
+      "characters": 19019,
+      "passages": 300,
+      "unique_passages": 300,
+      "preview": "the basket contains the letter because the letter is inside it.\nthe basket contains the stone because the stone is inside it.\nthe school is north of the bridge.the bridge is to the south of the school.\nthe toy is inside the tin.the tin contains the toy.\nthe clock is left of the chair.the chair is to"
+    }
+  ],
+  "ignored": [],
+  "external_passages": 1200,
+  "mode": "classroom",
+  "base_passages": 6200,
+  "unique_passages": 5792,
+  "new_unique_passages": 1200,
+  "duplicates_removed": 1608,
+  "max_passage_tokens": 47,
+  "split_unit": "deduplicated passage, not source file"
+}

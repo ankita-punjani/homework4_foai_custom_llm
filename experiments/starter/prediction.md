@@ -1,0 +1,9 @@
+**Experiment 1: starter corpus.** `CORPUS = "classroom"` with an empty `corpus/` folder, 3,000 steps, learning rate 0.001.
+
+- **Why these settings.** 3,000 steps × 32 passages ≈ 96,000 passage samples, about 23 passes over ~4,100 training passages. That should be enough to learn the fixed templates without being so long that I'm mostly measuring overfitting. 0.001 is a moderate AdamW step for a 112k-parameter model. Much larger steps can overshoot and make the loss spike or go non-finite. Much smaller steps would leave the model close to random after 3,000 updates. Warmup and cosine decay shrink the step size early and late.
+- **Loss.** Both fixed panels start near ln(136) ≈ 4.9, which is a uniform guess over the vocabulary. I expect them to fall below 1.0 and stay close together, because validation passages reuse the training templates. They can't reach 0, because the noun/adjective slot in each template is genuinely unpredictable.
+- **Samples.** Step 0 should be random word salad. By step 1,500 I expect template-shaped sentences. By step 3,000 they should mostly be well-formed classroom sentences, with some odd noun/context pairings.
+- **Evals.** Most of the 16 `starter_patterns` cases should pass, since those are the same templates with reserved prefixes. I expect some but not all of the 8 `starter_transfer` cases, since they use new sentence structures. I expect 0/24 on `extend_corpus`, because their words (e.g. *opposite*, *bird*, *not*) aren't in the vocabulary. They will be unscorable, and more training can't fix that.
+- **Embeddings.** Words that share template slots should end up with similar vectors: *customer* should move towards *client*, *buyer* and *shopper*.
+
+(My loss and eval expectations are partly informed by the reference run published in the starter repository.)

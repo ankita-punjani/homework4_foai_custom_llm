@@ -1,0 +1,300 @@
+the basket contains the letter because the letter is inside it.
+the basket contains the stone because the stone is inside it.
+the school is north of the bridge.the bridge is to the south of the school.
+the toy is inside the tin.the tin contains the toy.
+the clock is left of the chair.the chair is to the right of the clock.
+the bridge is south of the farm.the farm is to the north of the bridge.
+the station is south of the school.the school is to the north of the station.
+the school is south of the bridge.the bridge is to the north of the school.
+the plant is left of the stool.the stool is to the right of the plant.
+the picture is beside the mirror.the mirror is beside the picture.
+the clock is beside the table.the table is beside the clock.
+the rug is beside the shelf.the shelf is beside the rug.
+the clock is left of the piano.the piano is to the right of the clock.
+the rug is above the picture.the picture is below the rug.
+the ball is inside the bowl.the bowl contains the ball.
+the mirror is beside the window.the window is beside the mirror.
+the sofa is left of the bench.the bench is to the right of the sofa.
+the card is inside the bucket.the bucket contains the card.
+the table is beside the chair.the chair is beside the table.
+the clock is beside the mirror.the mirror is beside the clock.
+the rug is above the window.the window is below the rug.
+the pocket contains the ring because the ring is inside it.
+the rug is beside the fan.the fan is beside the rug.
+the river is north of the market.the market is to the south of the river.
+the rug is beside the mirror.the mirror is beside the rug.
+the chair is left of the bench.the bench is to the right of the chair.
+the river is south of the hill.the hill is to the north of the river.
+the bed is above the window.the window is below the bed.
+the farm is south of the market.the market is to the north of the farm.
+the table is left of the bed.the bed is to the right of the table.
+the mirror is beside the chair.the chair is beside the mirror.
+the drawer contains the ring because the ring is inside it.
+the park is south of the market.the market is to the north of the park.
+the mirror is beside the shelf.the shelf is beside the mirror.
+the park is north of the hill.the hill is to the south of the park.
+the rug is above the mirror.the mirror is below the rug.
+the bed is beside the chair.the chair is beside the bed.
+the rug is above the table.the table is below the rug.
+the picture is beside the clock.the clock is beside the picture.
+the bucket contains the ball because the ball is inside it.
+the table is beside the mirror.the mirror is beside the table.
+the tin contains the key because the key is inside it.
+the window is beside the table.the table is beside the window.
+the rug is beside the chair.the chair is beside the rug.
+the toy is inside the purse.the purse contains the toy.
+the plant is left of the tent.the tent is to the right of the plant.
+the shelf is above the mirror.the mirror is below the shelf.
+the plant is right of the clock.the clock is to the left of the plant.
+the clock is left of the bed.the bed is to the right of the clock.
+the park is north of the station.the station is to the south of the park.
+the shelf is above the clock.the clock is below the shelf.
+the coin is inside the drawer.the drawer contains the coin.
+the fan is beside the window.the window is beside the fan.
+the table is right of the stool.the stool is to the left of the table.
+the tent is right of the table.the table is to the left of the tent.
+the station is north of the river.the river is to the south of the station.
+the mirror is above the clock.the clock is below the mirror.
+the purse contains the toy because the toy is inside it.
+a book is beside the table .
+the sofa is right of the bench.the bench is to the left of the sofa.
+the coin is inside the tin.the tin contains the coin.
+the mirror is above the window.the window is below the mirror.
+the mirror is above the fan.the fan is below the mirror.
+the mirror is above the rug.the rug is below the mirror.
+the market is south of the station.the station is to the north of the market.
+the bucket contains the ring because the ring is inside it.
+the clock is right of the tent.the tent is to the left of the clock.
+the river is south of the station.the station is to the north of the river.
+the bench is right of the stool.the stool is to the left of the bench.
+the chair is left of the piano.the piano is to the right of the chair.
+the shelf is above the rug.the rug is below the shelf.
+the pen is inside the jar.the jar contains the pen.
+the fan is beside the bed.the bed is beside the fan.
+the bed is left of the bench.the bench is to the right of the bed.
+the pocket contains the stone because the stone is inside it.
+the purse contains the coin because the coin is inside it.
+the table is above the clock.the clock is below the table.
+the mirror is beside the clock.the clock is beside the mirror.
+the table is above the bed.the bed is below the table.
+the table is above the rug.the rug is below the table.
+the station is north of the market.the market is to the south of the station.
+the mirror is above the picture.the picture is below the mirror.
+the mirror is above the table.the table is below the mirror.
+the river is south of the market.the market is to the north of the river.
+the shelf is above the chair.the chair is below the shelf.
+the rug is beside the picture.the picture is beside the rug.
+the pen is inside the envelope.the envelope contains the pen.
+the shell is inside the jar.the jar contains the shell.
+the window is above the fan.the fan is below the window.
+the stool is right of the plant.the plant is to the left of the stool.
+the table is beside the shelf.the shelf is beside the table.
+the window is above the rug.the rug is below the window.
+the table is above the shelf.the shelf is below the table.
+the bowl contains the toy because the toy is inside it.
+the bridge is north of the market.the market is to the south of the bridge.
+the chair is above the rug.the rug is below the chair.
+the picture is beside the rug.the rug is beside the picture.
+the station is north of the park.the park is to the south of the station.
+the school is south of the station.the station is to the north of the school.
+the key is inside the crate.the crate contains the key.
+the piano is right of the bench.the bench is to the left of the piano.
+the crate contains the letter because the letter is inside it.
+the station is north of the bridge.the bridge is to the south of the station.
+the station is north of the school.the school is to the south of the station.
+the shell is inside the bucket.the bucket contains the shell.
+the river is south of the farm.the farm is to the north of the river.
+the tent is right of the bench.the bench is to the left of the tent.
+the shelf is beside the mirror.the mirror is beside the shelf.
+the fan is beside the chair.the chair is beside the fan.
+the bed is beside the picture.the picture is beside the bed.
+the picture is beside the chair.the chair is beside the picture.
+the chair is above the mirror.the mirror is below the chair.
+the purse contains the ball because the ball is inside it.
+the school is north of the hill.the hill is to the south of the school.
+the shelf is beside the rug.the rug is beside the shelf.
+the picture is above the bed.the bed is below the picture.
+the picture is beside the window.the window is beside the picture.
+the tent is left of the sofa.the sofa is to the right of the tent.
+the chair is beside the fan.the fan is beside the chair.
+the bed is beside the shelf.the shelf is beside the bed.
+the picture is beside the shelf.the shelf is beside the picture.
+the clock is above the picture.the picture is below the clock.
+the table is above the fan.the fan is below the table.
+the shelf is beside the window.the window is beside the shelf.
+the clock is beside the bed.the bed is beside the clock.
+the clock is beside the window.the window is beside the clock.
+the clock is left of the plant.the plant is to the right of the clock.
+the letter is inside the envelope.the envelope contains the letter.
+the piano is left of the clock.the clock is to the right of the piano.
+the chair is beside the table.the table is beside the chair.
+the sofa is right of the table.the table is to the left of the sofa.
+the tent is right of the sofa.the sofa is to the left of the tent.
+the fan is beside the clock.the clock is beside the fan.
+the window is above the bed.the bed is below the window.
+the clock is beside the chair.the chair is beside the clock.
+the lamp and the desk are new .
+the bed is right of the tent.the tent is to the left of the bed.
+the chair is above the clock.the clock is below the chair.
+the stool is right of the chair.the chair is to the left of the stool.
+the clock is above the fan.the fan is below the clock.
+the piano is left of the bed.the bed is to the right of the piano.
+the rug is above the fan.the fan is below the rug.
+the box is beside the bench .
+the stone is inside the drawer.the drawer contains the stone.
+the bowl contains the ball because the ball is inside it.
+the park is south of the hill.the hill is to the north of the park.
+the pen is inside the crate.the crate contains the pen.
+the table is right of the chair.the chair is to the left of the table.
+the table is beside the bed.the bed is beside the table.
+the letter is inside the tin.the tin contains the letter.
+the bucket contains the toy because the toy is inside it.
+the bridge is north of the hill.the hill is to the south of the bridge.
+the mirror is beside the rug.the rug is beside the mirror.
+the sofa is right of the stool.the stool is to the left of the sofa.
+the mirror is above the chair.the chair is below the mirror.
+the pen is inside the pocket.the pocket contains the pen.
+the tent is right of the chair.the chair is to the left of the tent.
+the chair is beside the shelf.the shelf is beside the chair.
+the clock is right of the plant.the plant is to the left of the clock.
+the letter is inside the bucket.the bucket contains the letter.
+the bed is beside the table.the table is beside the bed.
+the plant is left of the chair.the chair is to the right of the plant.
+the farm is south of the station.the station is to the north of the farm.
+the bridge is north of the farm.the farm is to the south of the bridge.
+the ball is inside the crate.the crate contains the ball.
+the tent is left of the bed.the bed is to the right of the tent.
+the market is south of the park.the park is to the north of the market.
+the ring is inside the jar.the jar contains the ring.
+the hill is north of the river.the river is to the south of the hill.
+the bed is above the mirror.the mirror is below the bed.
+the crate contains the shell because the shell is inside it.
+the card is inside the bowl.the bowl contains the card.
+the bridge is north of the river.the river is to the south of the bridge.
+the picture is beside the table.the table is beside the picture.
+the lamp is beside the bed .
+the envelope contains the stone because the stone is inside it.
+the picture is above the shelf.the shelf is below the picture.
+the piano is left of the sofa.the sofa is to the right of the piano.
+the fan is above the rug.the rug is below the fan.
+the window is beside the picture.the picture is beside the window.
+the window is beside the fan.the fan is beside the window.
+the card is inside the pocket.the pocket contains the card.
+the bridge is south of the station.the station is to the north of the bridge.
+the table is beside the rug.the rug is beside the table.
+the fan is above the chair.the chair is below the fan.
+the table is beside the window.the window is beside the table.
+the desk is beside the window .
+the shell is inside the pocket.the pocket contains the shell.
+the plant is right of the bench.the bench is to the left of the plant.
+the tin contains the ring because the ring is inside it.
+the picture is above the rug.the rug is below the picture.
+the chair is above the shelf.the shelf is below the chair.
+the tin contains the coin because the coin is inside it.
+the chair is above the table.the table is below the chair.
+the shelf is above the bed.the bed is below the shelf.
+the sofa is right of the chair.the chair is to the left of the sofa.
+the clock is beside the fan.the fan is beside the clock.
+the crate contains the key because the key is inside it.
+the purse contains the stone because the stone is inside it.
+the bed is right of the chair.the chair is to the left of the bed.
+the shelf is above the window.the window is below the shelf.
+the clock is above the mirror.the mirror is below the clock.
+the toy is inside the jar.the jar contains the toy.
+the bridge is south of the school.the school is to the north of the bridge.
+the bridge is north of the park.the park is to the south of the bridge.
+the school is north of the station.the station is to the south of the school.
+the farm is north of the market.the market is to the south of the farm.
+the market is north of the school.the school is to the south of the market.
+the picture is above the mirror.the mirror is below the picture.
+the park is north of the river.the river is to the south of the park.
+the table is beside the picture.the picture is beside the table.
+the farm is south of the school.the school is to the north of the farm.
+the bench is left of the piano.the piano is to the right of the bench.
+the toy is inside the bowl.the bowl contains the toy.
+the sofa is right of the clock.the clock is to the left of the sofa.
+the clock is above the window.the window is below the clock.
+the river is north of the station.the station is to the south of the river.
+the chair is left of the stool.the stool is to the right of the chair.
+the school is north of the park.the park is to the south of the school.
+the rug is beside the bed.the bed is beside the rug.
+the bench is right of the sofa.the sofa is to the left of the bench.
+the coin is inside the basket.the basket contains the coin.
+the rug is above the bed.the bed is below the rug.
+she put the bag beside the chair .
+the bed is above the picture.the picture is below the bed.
+the bucket contains the pen because the pen is inside it.
+the bed is right of the sofa.the sofa is to the left of the bed.
+the window is above the chair.the chair is below the window.
+the park is south of the station.the station is to the north of the park.
+the bowl contains the pen because the pen is inside it.
+the shelf is beside the clock.the clock is beside the shelf.
+the sofa is right of the plant.the plant is to the left of the sofa.
+the market is south of the bridge.the bridge is to the north of the market.
+the table is left of the piano.the piano is to the right of the table.
+the mirror is beside the bed.the bed is beside the mirror.
+the pen is inside the bowl.the bowl contains the pen.
+the chair is right of the plant.the plant is to the left of the chair.
+the picture is above the fan.the fan is below the picture.
+the market is north of the farm.the farm is to the south of the market.
+the station is north of the hill.the hill is to the south of the station.
+the shelf is above the fan.the fan is below the shelf.
+the window is beside the mirror.the mirror is beside the window.
+the tent is right of the stool.the stool is to the left of the tent.
+the window is beside the rug.the rug is beside the window.
+the chair is above the window.the window is below the chair.
+the bed is beside the clock.the clock is beside the bed.
+the clock is above the chair.the chair is below the clock.
+the stool is right of the tent.the tent is to the left of the stool.
+the farm is north of the station.the station is to the south of the farm.
+the market is south of the farm.the farm is to the north of the market.
+the chair is above the bed.the bed is below the chair.
+the coin is inside the crate.the crate contains the coin.
+the shelf is beside the chair.the chair is beside the shelf.
+the park is north of the school.the school is to the south of the park.
+the clock is left of the tent.the tent is to the right of the clock.
+the hill is south of the station.the station is to the north of the hill.
+the market is north of the park.the park is to the south of the market.
+the plant is right of the stool.the stool is to the left of the plant.
+the drawer contains the pen because the pen is inside it.
+the hill is south of the school.the school is to the north of the hill.
+the farm is south of the river.the river is to the north of the farm.
+the station is south of the market.the market is to the north of the station.
+the shelf is above the picture.the picture is below the shelf.
+the market is south of the school.the school is to the north of the market.
+the clock is right of the bench.the bench is to the left of the clock.
+the school is north of the farm.the farm is to the south of the school.
+the plant is left of the bench.the bench is to the right of the plant.
+the station is south of the hill.the hill is to the north of the station.
+the chair is beside the rug.the rug is beside the chair.
+the bowl contains the key because the key is inside it.
+the pocket contains the pen because the pen is inside it.
+the farm is south of the park.the park is to the north of the farm.
+the bench is right of the bed.the bed is to the left of the bench.
+the key is inside the pocket.the pocket contains the key.
+the farm is north of the park.the park is to the south of the farm.
+the chair is beside the picture.the picture is beside the chair.
+the table is right of the clock.the clock is to the left of the table.
+the picture is beside the fan.the fan is beside the picture.
+the fan is above the shelf.the shelf is below the fan.
+the window is beside the bed.the bed is beside the window.
+the ball is inside the bucket.the bucket contains the ball.
+the shell is inside the purse.the purse contains the shell.
+the toy is inside the pocket.the pocket contains the toy.
+the window is above the shelf.the shelf is below the window.
+the farm is north of the hill.the hill is to the south of the farm.
+the fan is above the clock.the clock is below the fan.
+the chair is above the fan.the fan is below the chair.
+the picture is above the clock.the clock is below the picture.
+the plant is left of the bed.the bed is to the right of the plant.
+the chair is beside the bed.the bed is beside the chair.
+the shelf is above the table.the table is below the shelf.
+the clock is right of the sofa.the sofa is to the left of the clock.
+the chair is right of the clock.the clock is to the left of the chair.
+the stool is left of the tent.the tent is to the right of the stool.
+the sofa is left of the table.the table is to the right of the sofa.
+the market is north of the hill.the hill is to the south of the market.
+the ring is inside the envelope.the envelope contains the ring.
+the shell is inside the basket.the basket contains the shell.
+the chair is left of the sofa.the sofa is to the right of the chair.
+the station is south of the park.the park is to the north of the station.

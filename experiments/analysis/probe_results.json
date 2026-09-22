@@ -1,0 +1,392 @@
+{
+  "the kite is not green . it is pink . the kite is": {
+    "group": "negation, taught object",
+    "unknown": [],
+    "top5": [
+      [
+        "pink",
+        0.915
+      ],
+      [
+        "brown",
+        0.03
+      ],
+      [
+        "purple",
+        0.01
+      ],
+      [
+        "red",
+        0.005
+      ],
+      [
+        "price",
+        0.005
+      ]
+    ]
+  },
+  "the hat is not white . it is gray . the hat is": {
+    "group": "negation, taught object",
+    "unknown": [],
+    "top5": [
+      [
+        "gray",
+        0.874
+      ],
+      [
+        "white",
+        0.049
+      ],
+      [
+        "brown",
+        0.031
+      ],
+      [
+        "purple",
+        0.005
+      ],
+      [
+        "dim",
+        0.004
+      ]
+    ]
+  },
+  "the crate is not green . it is pink . the crate is": {
+    "group": "negation, object never in a negation story",
+    "unknown": [],
+    "top5": [
+      [
+        "pink",
+        0.896
+      ],
+      [
+        "brown",
+        0.022
+      ],
+      [
+        "red",
+        0.012
+      ],
+      [
+        "purple",
+        0.006
+      ],
+      [
+        "price",
+        0.006
+      ]
+    ]
+  },
+  "the bench is not white . it is gray . the bench is": {
+    "group": "negation, object never in a negation story",
+    "unknown": [],
+    "top5": [
+      [
+        "gray",
+        0.867
+      ],
+      [
+        "white",
+        0.059
+      ],
+      [
+        "brown",
+        0.014
+      ],
+      [
+        "fence",
+        0.008
+      ],
+      [
+        "left",
+        0.005
+      ]
+    ]
+  },
+  "the kite is not green . it is blue . the kite is": {
+    "group": "negation, answer word never in the corrected slot",
+    "unknown": [],
+    "top5": [
+      [
+        "white",
+        0.319
+      ],
+      [
+        "purple",
+        0.153
+      ],
+      [
+        "blue",
+        0.111
+      ],
+      [
+        "black",
+        0.104
+      ],
+      [
+        "not",
+        0.089
+      ]
+    ]
+  },
+  "the gate is not closed . it is open . the gate is": {
+    "group": "negation, answer word never in the corrected slot",
+    "unknown": [],
+    "top5": [
+      [
+        "inside",
+        0.336
+      ],
+      [
+        "beside",
+        0.039
+      ],
+      [
+        "chose",
+        0.027
+      ],
+      [
+        "thin",
+        0.025
+      ],
+      [
+        "above",
+        0.023
+      ]
+    ]
+  },
+  "the kite is not red . it is green . the kite is": {
+    "group": "negation, denied-slot word never denied",
+    "unknown": [],
+    "top5": [
+      [
+        "green",
+        0.902
+      ],
+      [
+        "yellow",
+        0.024
+      ],
+      [
+        "red",
+        0.02
+      ],
+      [
+        "black",
+        0.013
+      ],
+      [
+        "pink",
+        0.006
+      ]
+    ]
+  },
+  "the sofa is left of the piano . the piano is to the": {
+    "group": "left/right, taught objects",
+    "unknown": [],
+    "top5": [
+      [
+        "right",
+        0.932
+      ],
+      [
+        "south",
+        0.021
+      ],
+      [
+        "left",
+        0.011
+      ],
+      [
+        "the",
+        0.005
+      ],
+      [
+        "a",
+        0.004
+      ]
+    ]
+  },
+  "the tent is right of the bench . the bench is to the": {
+    "group": "left/right, taught objects",
+    "unknown": [],
+    "top5": [
+      [
+        "left",
+        0.951
+      ],
+      [
+        "right",
+        0.024
+      ],
+      [
+        "north",
+        0.003
+      ],
+      [
+        "not",
+        0.001
+      ],
+      [
+        "sofa",
+        0.001
+      ]
+    ]
+  },
+  "the key is left of the jar . the jar is to the": {
+    "group": "left/right, objects never in that frame",
+    "unknown": [],
+    "top5": [
+      [
+        "right",
+        0.497
+      ],
+      [
+        "south",
+        0.202
+      ],
+      [
+        "left",
+        0.086
+      ],
+      [
+        "north",
+        0.011
+      ],
+      [
+        "beside",
+        0.007
+      ]
+    ]
+  },
+  "the coin is right of the pen . the pen is to the": {
+    "group": "left/right, objects never in that frame",
+    "unknown": [],
+    "top5": [
+      [
+        "left",
+        0.746
+      ],
+      [
+        "not",
+        0.036
+      ],
+      [
+        "right",
+        0.012
+      ],
+      [
+        "friend",
+        0.012
+      ],
+      [
+        "stool",
+        0.011
+      ]
+    ]
+  },
+  "the opposite of big is": {
+    "group": "opposite frame, taught pair",
+    "unknown": [],
+    "top5": [
+      [
+        "small",
+        0.53
+      ],
+      [
+        "happy",
+        0.102
+      ],
+      [
+        "hiding",
+        0.047
+      ],
+      [
+        "here",
+        0.035
+      ],
+      [
+        "sleeping",
+        0.032
+      ]
+    ]
+  },
+  "the opposite of warm is": {
+    "group": "opposite frame, taught pair",
+    "unknown": [],
+    "top5": [
+      [
+        "cool",
+        0.581
+      ],
+      [
+        "late",
+        0.046
+      ],
+      [
+        "poor",
+        0.037
+      ],
+      [
+        "thin",
+        0.022
+      ],
+      [
+        "short",
+        0.012
+      ]
+    ]
+  },
+  "the opposite of full is": {
+    "group": "opposite frame, contrast-only pair",
+    "unknown": [],
+    "top5": [
+      [
+        "cool",
+        0.399
+      ],
+      [
+        "empty",
+        0.106
+      ],
+      [
+        "inside",
+        0.08
+      ],
+      [
+        "warm",
+        0.031
+      ],
+      [
+        "dim",
+        0.021
+      ]
+    ]
+  },
+  "the opposite of quiet is": {
+    "group": "opposite frame, contrast-only pair",
+    "unknown": [],
+    "top5": [
+      [
+        "clean",
+        0.203
+      ],
+      [
+        "purple",
+        0.09
+      ],
+      [
+        "warm",
+        0.078
+      ],
+      [
+        "bright",
+        0.069
+      ],
+      [
+        "brown",
+        0.069
+      ]
+    ]
+  }
+}

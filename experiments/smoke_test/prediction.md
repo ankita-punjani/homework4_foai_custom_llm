@@ -1,0 +1,1 @@
+Setup check only: 10 steps at learning rate 0.001 on the classroom corpus. I expect every cell to run, loss to fall only slightly from its random-guess value (about ln(vocab) ≈ 4.9), samples to stay garbled, and eval scores to stay near chance.

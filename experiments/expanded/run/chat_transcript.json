@@ -1,0 +1,16 @@
+{
+  "model_sha256": "aafa9d5ad9a80cb6c27a075baddce77cb55a0f315ffed3f94509729931bb2777",
+  "completed_steps": 3000,
+  "fresh_context_per_prompt": true,
+  "temperature": 0.8,
+  "max_tokens": 24,
+  "turns": [
+    {
+      "prompt": "the kite is not green .it is",
+      "seed": 2026,
+      "response": "brown . the kite is brown .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    }
+  ]
+}

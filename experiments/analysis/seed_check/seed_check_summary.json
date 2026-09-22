@@ -1,0 +1,38 @@
+{
+  "starter_seed1": {
+    "extend_corpus": 0,
+    "starter_patterns": 16,
+    "starter_transfer": 6,
+    "total": 22
+  },
+  "starter_seed2": {
+    "extend_corpus": 0,
+    "starter_patterns": 16,
+    "starter_transfer": 7,
+    "total": 23
+  },
+  "starter_seed3": {
+    "extend_corpus": 0,
+    "starter_patterns": 16,
+    "starter_transfer": 7,
+    "total": 23
+  },
+  "expanded_seed1": {
+    "extend_corpus": 9,
+    "starter_patterns": 16,
+    "starter_transfer": 7,
+    "total": 32
+  },
+  "expanded_seed2": {
+    "extend_corpus": 7,
+    "starter_patterns": 16,
+    "starter_transfer": 8,
+    "total": 31
+  },
+  "expanded_seed3": {
+    "extend_corpus": 9,
+    "starter_patterns": 16,
+    "starter_transfer": 6,
+    "total": 31
+  }
+}

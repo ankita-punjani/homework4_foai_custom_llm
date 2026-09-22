@@ -1,0 +1,33 @@
+{
+  "method": "normalized tokens; exact prompt match plus any shared 5-token run with an eval prompt or explanation; four-choice co-occurrence; eval names",
+  "files": [
+    "extension/grammar.txt",
+    "extension/negation.txt",
+    "extension/opposites.txt",
+    "extension/spatial.txt"
+  ],
+  "passages_checked": 1200,
+  "exact_prompt_matches": [],
+  "shared_5gram_runs": [],
+  "all_four_choices_in_one_passage": [],
+  "eval_names": [],
+  "control_category_content_words_in_corpus": {
+    "lang_34": [
+      "book"
+    ],
+    "lang_35": [],
+    "lang_36": [],
+    "lang_37": [],
+    "lang_38": [],
+    "lang_39": [],
+    "lang_43": [],
+    "lang_44": [],
+    "lang_45": [],
+    "lang_46": [
+      "bird"
+    ],
+    "lang_47": [],
+    "lang_48": []
+  },
+  "suite_sha256": "1d7c503f34d88260d0ac897bc36b8ba621cccc1950aef47e7121e69b2c1c9e1d"
+}

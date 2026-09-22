@@ -1,0 +1,300 @@
+the pen is not blue.it is green.the pen is green.
+the fence is not brown.it is red.the fence is red.
+the wall is not gray.it is green.the wall is green.
+the chair is not black.it is pink.the chair is pink.
+we thought the balloon was yellow , but it was not yellow.it was green.the balloon was green.
+mia did not wear the jacket.she wore the scarf.mia wore the scarf.
+lucy did not wear the jacket.she wore the scarf.lucy wore the scarf.
+the flower is not white.it is pink.the flower is pink.
+the chair is not pink.it is brown.the chair is brown.
+they painted the door green .
+we thought the boat was brown , but it was not brown.it was gray.the boat was gray.
+the jacket is not purple.it is green.the jacket is green.
+we thought the wall was blue , but it was not blue.it was red.the wall was red.
+dev did not bring the black boat.he brought the banana.dev brought the banana.
+the flower is not green.it is gray.the flower is gray.
+mia did not order the green shirt.she ordered the jacket.mia ordered the jacket.
+we thought the fence was blue , but it was not blue.it was yellow.the fence was yellow.
+the pen is not brown.it is white.the pen is white.
+the flower is not white.it is gray.the flower is gray.
+we thought the scarf was white , but it was not white.it was pink.the scarf was pink.
+raj did not pick the jacket.he picked the hat.raj picked the hat.
+ivy did not pick the kite.she picked the pear.ivy picked the pear.
+raj did not paint the soup.he painted the banana.raj painted the banana.
+the hat is not yellow.it is pink.the hat is pink.
+the boat is not pink.it is gray.the boat is gray.
+we thought the chair was blue , but it was not blue.it was black.the chair was black.
+mia did not wear the pear.she wore the black boat.mia wore the black boat.
+we thought the boat was white , but it was not white.it was green.the boat was green.
+jade did not wear the soup.she wore the green shirt.jade wore the green shirt.
+we thought the kite was purple , but it was not purple.it was pink.the kite was pink.
+dev did not pick the pear.he picked the black boat.dev picked the black boat.
+we thought the flower was gray , but it was not gray.it was green.the flower was green.
+the flower is not blue.it is yellow.the flower is yellow.
+zoe did not paint the soup.she painted the hat.zoe painted the hat.
+dev did not choose the green shirt.he chose the scarf.dev chose the scarf.
+we thought the sock was green , but it was not green.it was pink.the sock was pink.
+we thought the pen was yellow , but it was not yellow.it was white.the pen was white.
+lucy did not order the peach.she ordered the hat.lucy ordered the hat.
+the hat is not white.it is black.the hat is black.
+jade did not bring the soup.she brought the kite.jade brought the kite.
+dev did not paint the pear.he painted the jacket.dev painted the jacket.
+we thought the flower was blue , but it was not blue.it was red.the flower was red.
+the pen is not brown.it is red.the pen is red.
+we thought the boat was yellow , but it was not yellow.it was white.the boat was white.
+we thought the bowl was black , but it was not black.it was pink.the bowl was pink.
+sam did not wear the scarf.he wore the peach.sam wore the peach.
+we thought the scarf was brown , but it was not brown.it was yellow.the scarf was yellow.
+we thought the jacket was white , but it was not white.it was yellow.the jacket was yellow.
+mia did not order the pear.she ordered the jacket.mia ordered the jacket.
+we thought the boat was green , but it was not green.it was red.the boat was red.
+the flower is not blue.it is pink.the flower is pink.
+the boat is not yellow.it is red.the boat is red.
+raj did not choose the banana.he chose the pear.raj chose the pear.
+ben did not bring the hat.he brought the black boat.ben brought the black boat.
+ivy did not choose the banana.she chose the pear.ivy chose the pear.
+zoe did not choose the scarf.she chose the soup.zoe chose the soup.
+the flower is not blue.it is white.the flower is white.
+the fence is not pink.it is gray.the fence is gray.
+the hat is not black.it is white.the hat is white.
+we thought the shirt was white , but it was not white.it was gray.the shirt was gray.
+we thought the sock was yellow , but it was not yellow.it was white.the sock was white.
+the bowl is not brown.it is purple.the bowl is purple.
+the boat is not green.it is gray.the boat is gray.
+mia did not pick the peach.she picked the pear.mia picked the pear.
+the balloon is not pink.it is purple.the balloon is purple.
+the balloon is not gray.it is yellow.the balloon is yellow.
+ben did not paint the pear.he painted the banana.ben painted the banana.
+we thought the bowl was black , but it was not black.it was yellow.the bowl was yellow.
+raj did not bring the hat.he brought the kite.raj brought the kite.
+we thought the hat was pink , but it was not pink.it was red.the hat was red.
+lucy did not paint the green shirt.she painted the kite.lucy painted the kite.
+we thought the flower was purple , but it was not purple.it was black.the flower was black.
+zoe did not order the hat.she ordered the green shirt.zoe ordered the green shirt.
+kai did not wear the scarf.he wore the hat.kai wore the hat.
+ben did not wear the soup.he wore the kite.ben wore the kite.
+kai did not wear the kite.he wore the banana.kai wore the banana.
+zoe did not paint the soup.she painted the green shirt.zoe painted the green shirt.
+we thought the flower was blue , but it was not blue.it was black.the flower was black.
+we thought the kite was black , but it was not black.it was yellow.the kite was yellow.
+the balloon is not purple.it is green.the balloon is green.
+mia did not pick the green shirt.she picked the hat.mia picked the hat.
+we thought the flower was pink , but it was not pink.it was green.the flower was green.
+we thought the flower was purple , but it was not purple.it was brown.the flower was brown.
+ben did not paint the hat.he painted the kite.ben painted the kite.
+raj did not choose the pear.he chose the banana.raj chose the banana.
+kai did not paint the scarf.he painted the peach.kai painted the peach.
+jade did not wear the black boat.she wore the jacket.jade wore the jacket.
+the pen is not yellow.it is pink.the pen is pink.
+the flower is not purple.it is pink.the flower is pink.
+we thought the bowl was purple , but it was not purple.it was yellow.the bowl was yellow.
+we thought the kite was black , but it was not black.it was green.the kite was green.
+the bowl is not purple.it is white.the bowl is white.
+the wall is not black.it is pink.the wall is pink.
+ivy did not pick the green shirt.she picked the pear.ivy picked the pear.
+we thought the bowl was brown , but it was not brown.it was green.the bowl was green.
+the wall is not gray.it is purple.the wall is purple.
+the scarf is not green.it is black.the scarf is black.
+the balloon is not brown.it is gray.the balloon is gray.
+dev did not pick the jacket.he picked the pear.dev picked the pear.
+the shop is open every sunday .
+we thought the bowl was pink , but it was not pink.it was black.the bowl was black.
+we thought the sock was gray , but it was not gray.it was pink.the sock was pink.
+jade did not pick the peach.she picked the scarf.jade picked the scarf.
+dev did not wear the scarf.he wore the kite.dev wore the kite.
+we thought the sock was purple , but it was not purple.it was black.the sock was black.
+jade did not paint the jacket.she painted the black boat.jade painted the black boat.
+dev did not paint the soup.he painted the peach.dev painted the peach.
+kai did not choose the hat.he chose the black boat.kai chose the black boat.
+we thought the bowl was purple , but it was not purple.it was gray.the bowl was gray.
+we thought the scarf was pink , but it was not pink.it was black.the scarf was black.
+the road is wide and the gate is closed .
+the scarf is not yellow.it is brown.the scarf is brown.
+we thought the shirt was blue , but it was not blue.it was black.the shirt was black.
+the flower is not pink.it is brown.the flower is brown.
+we thought the shirt was pink , but it was not pink.it was red.the shirt was red.
+jade did not paint the peach.she painted the banana.jade painted the banana.
+we thought the kite was pink , but it was not pink.it was purple.the kite was purple.
+kai did not wear the banana.he wore the jacket.kai wore the jacket.
+raj did not paint the scarf.he painted the peach.raj painted the peach.
+the sock is not pink.it is white.the sock is white.
+the pen is not blue.it is gray.the pen is gray.
+lucy did not wear the jacket.she wore the green shirt.lucy wore the green shirt.
+the pen is not purple.it is white.the pen is white.
+the balloon is not green.it is red.the balloon is red.
+the flower is not black.it is yellow.the flower is yellow.
+zoe did not order the banana.she ordered the peach.zoe ordered the peach.
+we thought the wall was green , but it was not green.it was brown.the wall was brown.
+we thought the scarf was pink , but it was not pink.it was purple.the scarf was purple.
+we thought the bowl was brown , but it was not brown.it was gray.the bowl was gray.
+we thought the shirt was white , but it was not white.it was red.the shirt was red.
+we thought the shirt was brown , but it was not brown.it was red.the shirt was red.
+the flower is not purple.it is black.the flower is black.
+the boat is not gray.it is red.the boat is red.
+the sock is not gray.it is pink.the sock is pink.
+the wall is not white.it is gray.the wall is gray.
+the bowl is not pink.it is gray.the bowl is gray.
+the jacket is not yellow.it is pink.the jacket is pink.
+we thought the sock was yellow , but it was not yellow.it was green.the sock was green.
+we thought the bowl was blue , but it was not blue.it was red.the bowl was red.
+we thought the sock was gray , but it was not gray.it was purple.the sock was purple.
+mia did not bring the pear.she brought the green shirt.mia brought the green shirt.
+the balloon is not blue.it is green.the balloon is green.
+lucy did not paint the scarf.she painted the pear.lucy painted the pear.
+mia did not bring the jacket.she brought the hat.mia brought the hat.
+the balloon is not black.it is white.the balloon is white.
+the shirt is not blue.it is green.the shirt is green.
+the flower is not purple.it is red.the flower is red.
+we thought the hat was purple , but it was not purple.it was yellow.the hat was yellow.
+ben did not pick the soup.he picked the hat.ben picked the hat.
+we thought the jacket was yellow , but it was not yellow.it was gray.the jacket was gray.
+jade did not bring the black boat.she brought the banana.jade brought the banana.
+the jacket is not green.it is gray.the jacket is gray.
+the bowl is not green.it is pink.the bowl is pink.
+raj did not paint the scarf.he painted the hat.raj painted the hat.
+the flower is not black.it is brown.the flower is brown.
+the fence is not purple.it is yellow.the fence is yellow.
+the boat is not black.it is pink.the boat is pink.
+the balloon is not white.it is yellow.the balloon is yellow.
+the bowl is not blue.it is pink.the bowl is pink.
+we thought the sock was pink , but it was not pink.it was brown.the sock was brown.
+kai did not pick the kite.he picked the peach.kai picked the peach.
+we thought the bowl was purple , but it was not purple.it was red.the bowl was red.
+lucy did not pick the hat.she picked the banana.lucy picked the banana.
+the wall is not brown.it is green.the wall is green.
+we thought the kite was yellow , but it was not yellow.it was white.the kite was white.
+we thought the hat was green , but it was not green.it was black.the hat was black.
+the scarf is not blue.it is white.the scarf is white.
+ivy did not bring the hat.she brought the soup.ivy brought the soup.
+we thought the sock was yellow , but it was not yellow.it was red.the sock was red.
+we thought the flower was pink , but it was not pink.it was black.the flower was black.
+the sock is not blue.it is gray.the sock is gray.
+zoe did not choose the scarf.she chose the jacket.zoe chose the jacket.
+zoe did not choose the kite.she chose the peach.zoe chose the peach.
+zoe did not order the hat.she ordered the banana.zoe ordered the banana.
+the flower is not white.it is purple.the flower is purple.
+we thought the bowl was gray , but it was not gray.it was purple.the bowl was purple.
+the shirt is not green.it is gray.the shirt is gray.
+we thought the scarf was blue , but it was not blue.it was pink.the scarf was pink.
+we thought the boat was brown , but it was not brown.it was green.the boat was green.
+we thought the balloon was pink , but it was not pink.it was brown.the balloon was brown.
+dev did not order the hat.he ordered the kite.dev ordered the kite.
+mia did not wear the kite.she wore the hat.mia wore the hat.
+we thought the pen was pink , but it was not pink.it was white.the pen was white.
+we thought the balloon was purple , but it was not purple.it was red.the balloon was red.
+zoe did not paint the banana.she painted the pear.zoe painted the pear.
+the fence is not gray.it is green.the fence is green.
+dev did not choose the jacket.he chose the scarf.dev chose the scarf.
+the balloon is not green.it is white.the balloon is white.
+the kite is not purple.it is gray.the kite is gray.
+we thought the kite was yellow , but it was not yellow.it was red.the kite was red.
+we thought the hat was white , but it was not white.it was yellow.the hat was yellow.
+we thought the kite was green , but it was not green.it was red.the kite was red.
+dev did not wear the peach.he wore the soup.dev wore the soup.
+the kite is not purple.it is brown.the kite is brown.
+lucy did not paint the jacket.she painted the kite.lucy painted the kite.
+mia did not paint the black boat.she painted the soup.mia painted the soup.
+the flower is not purple.it is green.the flower is green.
+the pen is not green.it is purple.the pen is purple.
+the flower is not yellow.it is green.the flower is green.
+the shop was closed that monday .
+ivy did not wear the peach.she wore the green shirt.ivy wore the green shirt.
+the kite is not green.it is black.the kite is black.
+dev did not bring the banana.he brought the jacket.dev brought the jacket.
+kai did not wear the jacket.he wore the pear.kai wore the pear.
+the shirt is not gray.it is white.the shirt is white.
+the flower is not green.it is white.the flower is white.
+we thought the wall was black , but it was not black.it was brown.the wall was brown.
+we thought the flower was black , but it was not black.it was green.the flower was green.
+we thought the fence was white , but it was not white.it was yellow.the fence was yellow.
+we thought the fence was gray , but it was not gray.it was red.the fence was red.
+jade did not pick the soup.she picked the kite.jade picked the kite.
+lucy did not choose the soup.she chose the hat.lucy chose the hat.
+zoe did not wear the soup.she wore the peach.zoe wore the peach.
+we thought the sock was white , but it was not white.it was brown.the sock was brown.
+the sock is not blue.it is black.the sock is black.
+we thought the shirt was brown , but it was not brown.it was purple.the shirt was purple.
+zoe did not wear the banana.she wore the pear.zoe wore the pear.
+we thought the shirt was pink , but it was not pink.it was black.the shirt was black.
+the hat is not brown.it is purple.the hat is purple.
+the pen was missing again .
+ivy did not paint the banana.she painted the hat.ivy painted the hat.
+sam did not order the banana.he ordered the pear.sam ordered the pear.
+the bowl is not blue.it is red.the bowl is red.
+the boat is not brown.it is pink.the boat is pink.
+we thought the pen was gray , but it was not gray.it was white.the pen was white.
+we thought the sock was black , but it was not black.it was gray.the sock was gray.
+ben did not order the black boat.he ordered the hat.ben ordered the hat.
+the kite is not gray.it is purple.the kite is purple.
+we thought the kite was purple , but it was not purple.it was gray.the kite was gray.
+the chair is not pink.it is white.the chair is white.
+raj did not order the pear.he ordered the peach.raj ordered the peach.
+we thought the balloon was blue , but it was not blue.it was white.the balloon was white.
+the scarf is not brown.it is green.the scarf is green.
+zoe did not wear the jacket.she wore the black boat.zoe wore the black boat.
+the wall is not gray.it is black.the wall is black.
+zoe did not bring the kite.she brought the pear.zoe brought the pear.
+the river is wide .
+zoe did not wear the scarf.she wore the banana.zoe wore the banana.
+the sock is not white.it is gray.the sock is gray.
+we thought the sock was purple , but it was not purple.it was white.the sock was white.
+kai did not pick the banana.he picked the kite.kai picked the kite.
+we thought the flower was gray , but it was not gray.it was yellow.the flower was yellow.
+the pen is not black.it is green.the pen is green.
+the boat is not black.it is white.the boat is white.
+the bowl is not white.it is purple.the bowl is purple.
+we thought the wall was blue , but it was not blue.it was yellow.the wall was yellow.
+lucy did not pick the hat.she picked the soup.lucy picked the soup.
+we thought the shirt was purple , but it was not purple.it was red.the shirt was red.
+we thought the shirt was green , but it was not green.it was purple.the shirt was purple.
+the jacket is not purple.it is brown.the jacket is brown.
+we thought the wall was pink , but it was not pink.it was white.the wall was white.
+the shirt is not brown.it is gray.the shirt is gray.
+we thought the chair was yellow , but it was not yellow.it was red.the chair was red.
+ben did not order the hat.he ordered the kite.ben ordered the kite.
+the pen is not gray.it is brown.the pen is brown.
+we thought the chair was black , but it was not black.it was purple.the chair was purple.
+the gate stayed open all day .
+the fence is not yellow.it is brown.the fence is brown.
+the jacket is not blue.it is purple.the jacket is purple.
+the kite is not yellow.it is green.the kite is green.
+we thought the balloon was purple , but it was not purple.it was green.the balloon was green.
+raj did not pick the kite.he picked the peach.raj picked the peach.
+the kite is not yellow.it is purple.the kite is purple.
+raj did not paint the pear.he painted the black boat.raj painted the black boat.
+we thought the wall was green , but it was not green.it was purple.the wall was purple.
+dev did not wear the soup.he wore the pear.dev wore the pear.
+sam did not wear the banana.he wore the hat.sam wore the hat.
+mia did not paint the scarf.she painted the soup.mia painted the soup.
+we thought the boat was purple , but it was not purple.it was yellow.the boat was yellow.
+the chair is not yellow.it is red.the chair is red.
+we thought the bowl was brown , but it was not brown.it was pink.the bowl was pink.
+the scarf is not white.it is red.the scarf is red.
+one sock is missing .
+we thought the boat was blue , but it was not blue.it was white.the boat was white.
+we thought the kite was yellow , but it was not yellow.it was gray.the kite was gray.
+ivy did not order the peach.she ordered the pear.ivy ordered the pear.
+kai did not order the green shirt.he ordered the banana.kai ordered the banana.
+we thought the balloon was pink , but it was not pink.it was green.the balloon was green.
+kai did not bring the banana.he brought the peach.kai brought the peach.
+the scarf is not purple.it is white.the scarf is white.
+we thought the jacket was purple , but it was not purple.it was pink.the jacket was pink.
+raj did not order the kite.he ordered the jacket.raj ordered the jacket.
+the wall is not pink.it is red.the wall is red.
+we thought the shirt was black , but it was not black.it was gray.the shirt was gray.
+ivy did not paint the hat.she painted the peach.ivy painted the peach.
+the chair is not white.it is brown.the chair is brown.
+we thought the boat was purple , but it was not purple.it was pink.the boat was pink.
+we thought the shirt was gray , but it was not gray.it was yellow.the shirt was yellow.
+we thought the jacket was brown , but it was not brown.it was red.the jacket was red.
+we thought the chair was green , but it was not green.it was black.the chair was black.
+we thought the balloon was green , but it was not green.it was white.the balloon was white.
+kai did not choose the banana.he chose the hat.kai chose the hat.
+we thought the jacket was black , but it was not black.it was red.the jacket was red.
+the wall is not green.it is white.the wall is white.
+jade did not order the black boat.she ordered the hat.jade ordered the hat.
+raj did not pick the banana.he picked the peach.raj picked the peach.
+ivy did not pick the hat.she picked the kite.ivy picked the kite.
+we thought the jacket was brown , but it was not brown.it was green.the jacket was green.
+the kite is not gray.it is brown.the kite is brown.
+ivy did not order the jacket.she ordered the kite.ivy ordered the kite.

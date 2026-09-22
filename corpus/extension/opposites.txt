@@ -1,0 +1,300 @@
+one box was big while the other was small .
+in the morning the road felt full , and at night it felt empty .
+the field was full in summer but empty in winter .
+before noon the garden felt loud , and after sunset it felt quiet .
+before noon the road felt noisy , and after sunset it felt quiet .
+in the morning the road felt hot , and at night it felt cold .
+the street was bright in summer but dim in winter .
+the park was warm at dawn but cool at dusk .
+the street was hot before noon but cold after sunset .
+the road was warm at dawn but cool at dusk .
+the field was loud before noon but quiet after sunset .
+the pool was full in summer but empty in winter .
+at dawn the garden felt hot , and at dusk it felt cold .
+the hall was warm in the morning but cool at night .
+the park was bright in the morning but dim at night .
+the road was hot in summer but cold in winter .
+the road was clean in the morning but dirty at night .
+the opposite of old is young .
+happy and sad mean opposite things .
+in summer the pool felt clean , and in winter it felt dirty .
+in the morning the road felt clean , and at night it felt dirty .
+before noon the hall felt bright , and after sunset it felt dim .
+in the morning the street felt full , and at night it felt empty .
+the heavy bag was slow to move .
+in the morning the garden felt clean , and at night it felt dirty .
+the field was noisy in the morning but quiet at night .
+the hall was bright in the morning but dim at night .
+in summer the garden felt full , and in winter it felt empty .
+the opposite of far is near .
+the opposite of happy is sad .
+in the morning the hall felt warm , and at night it felt cool .
+at dawn the market felt hot , and at dusk it felt cold .
+in summer the field felt warm , and in winter it felt cool .
+the road was bright at dawn but dim at dusk .
+before noon the field felt clean , and after sunset it felt dirty .
+the pool was bright in the morning but dim at night .
+the opposite of dim is bright .
+the garden was hot at dawn but cold at dusk .
+in summer the market felt loud , and in winter it felt quiet .
+in summer the park felt bright , and in winter it felt dim .
+the market was loud at dawn but quiet at dusk .
+rich and poor mean opposite things .
+one soup was hot while the other was cold .
+before noon the hall felt full , and after sunset it felt empty .
+before noon the field felt loud , and after sunset it felt quiet .
+the market was loud in the morning but quiet at night .
+the market was bright in the morning but dim at night .
+the hall was warm before noon but cool after sunset .
+the opposite of young is old .
+the field was noisy in summer but quiet in winter .
+the park was bright before noon but dim after sunset .
+the opposite of dirty is clean .
+in the morning the pool felt clean , and at night it felt dirty .
+it was not big at all ; it was small .
+in summer the hall felt hot , and in winter it felt cold .
+the opposite of warm is cool .
+sweet and sour mean opposite things .
+one box was soft while the other was hard .
+the pool was warm before noon but cool after sunset .
+in summer the street felt loud , and in winter it felt quiet .
+the field was loud in summer but quiet in winter .
+one box was old while the other was young .
+in summer the hall felt loud , and in winter it felt quiet .
+it was not clean at all ; it was dirty .
+the street was hot in summer but cold in winter .
+before noon the park felt hot , and after sunset it felt cold .
+tall and short mean opposite things .
+in summer the market felt clean , and in winter it felt dirty .
+the opposite of small is big .
+it was not full at all ; it was empty .
+in summer the pool felt noisy , and in winter it felt quiet .
+before noon the garden felt full , and after sunset it felt empty .
+in the morning the park felt bright , and at night it felt dim .
+the park was hot at dawn but cold at dusk .
+the garden was full at dawn but empty at dusk .
+one box was early while the other was late .
+the field was clean before noon but dirty after sunset .
+the road was full in the morning but empty at night .
+at dawn the street felt clean , and at dusk it felt dirty .
+at dawn the field felt bright , and at dusk it felt dim .
+in the morning the street felt bright , and at night it felt dim .
+in the morning the hall felt loud , and at night it felt quiet .
+it was not bright at all ; it was dim .
+one box was tall while the other was short .
+the pool was loud in summer but quiet in winter .
+the garden was noisy at dawn but quiet at dusk .
+before noon the market felt noisy , and after sunset it felt quiet .
+the garden was clean before noon but dirty after sunset .
+it was not noisy at all ; it was quiet .
+at dawn the road felt loud , and at dusk it felt quiet .
+at dawn the road felt noisy , and at dusk it felt quiet .
+in summer the hall felt clean , and in winter it felt dirty .
+in the morning the pool felt noisy , and at night it felt quiet .
+in the morning the market felt full , and at night it felt empty .
+in the morning the hall felt full , and at night it felt empty .
+in the morning the road felt bright , and at night it felt dim .
+in summer the park felt warm , and in winter it felt cool .
+the opposite of weak is strong .
+the road was bright in summer but dim in winter .
+one box was happy while the other was sad .
+the suitcase was heavy and hard to carry .
+at dawn the garden felt clean , and at dusk it felt dirty .
+the opposite of sad is happy .
+the pool was clean before noon but dirty after sunset .
+strong and weak mean opposite things .
+before noon the street felt full , and after sunset it felt empty .
+in summer the market felt bright , and in winter it felt dim .
+in summer the road felt bright , and in winter it felt dim .
+one box was rich while the other was poor .
+one box was fast while the other was slow .
+it was not early at all ; it was late .
+before noon the hall felt noisy , and after sunset it felt quiet .
+the garden was bright in summer but dim in winter .
+in the morning the street felt warm , and at night it felt cool .
+it was not happy at all ; it was sad .
+before noon the hall felt clean , and after sunset it felt dirty .
+before noon the road felt bright , and after sunset it felt dim .
+the street was loud at dawn but quiet at dusk .
+it was not strong at all ; it was weak .
+the opposite of hard is soft .
+the road was clean in summer but dirty in winter .
+at dawn the field felt noisy , and at dusk it felt quiet .
+at dawn the park felt noisy , and at dusk it felt quiet .
+in the morning the park felt full , and at night it felt empty .
+before noon the street felt noisy , and after sunset it felt quiet .
+it was not sweet at all ; it was sour .
+it was not loud at all ; it was quiet .
+the hall was noisy before noon but quiet after sunset .
+one box was thick while the other was thin .
+the hall was bright before noon but dim after sunset .
+the street was warm before noon but cool after sunset .
+in summer the garden felt noisy , and in winter it felt quiet .
+one box was warm while the other was cool .
+the park was full at dawn but empty at dusk .
+the opposite of poor is rich .
+before noon the park felt noisy , and after sunset it felt quiet .
+the market was noisy at dawn but quiet at dusk .
+in summer the park felt hot , and in winter it felt cold .
+the park was loud in summer but quiet in winter .
+the opposite of thick is thin .
+at dawn the market felt loud , and at dusk it felt quiet .
+the road was full in summer but empty in winter .
+the garden was loud at dawn but quiet at dusk .
+in summer the field felt bright , and in winter it felt dim .
+in summer the park felt loud , and in winter it felt quiet .
+at dawn the road felt clean , and at dusk it felt dirty .
+one jar was full while the other was empty .
+it was not rich at all ; it was poor .
+the park was warm in summer but cool in winter .
+in the morning the field felt noisy , and at night it felt quiet .
+the market was warm before noon but cool after sunset .
+before noon the garden felt noisy , and after sunset it felt quiet .
+the opposite of clean is dirty .
+the market was hot in the morning but cold at night .
+one box was sweet while the other was sour .
+the pool was full in the morning but empty at night .
+in the morning the field felt clean , and at night it felt dirty .
+the park was hot before noon but cold after sunset .
+old and young mean opposite things .
+the road was loud in summer but quiet in winter .
+the road was clean at dawn but dirty at dusk .
+at dawn the hall felt bright , and at dusk it felt dim .
+before noon the market felt full , and after sunset it felt empty .
+the field was hot before noon but cold after sunset .
+in the morning the field felt full , and at night it felt empty .
+the market was full in summer but empty in winter .
+the hall was full in summer but empty in winter .
+the market was clean in summer but dirty in winter .
+the hall was clean before noon but dirty after sunset .
+before noon the road felt warm , and after sunset it felt cool .
+the hall was loud before noon but quiet after sunset .
+before noon the field felt noisy , and after sunset it felt quiet .
+in the morning the market felt warm , and at night it felt cool .
+the opposite of late is early .
+fast and slow mean opposite things .
+bright and dim mean opposite things .
+the pool was noisy at dawn but quiet at dusk .
+it was not thick at all ; it was thin .
+the opposite of short is tall .
+the street was bright at dawn but dim at dusk .
+the park was bright in summer but dim in winter .
+the pool was clean at dawn but dirty at dusk .
+it was not hot at all ; it was cold .
+in the morning the park felt hot , and at night it felt cold .
+at dawn the market felt noisy , and at dusk it felt quiet .
+the pool was hot at dawn but cold at dusk .
+in summer the park felt full , and in winter it felt empty .
+the market was loud before noon but quiet after sunset .
+one street was noisy while the other was quiet .
+the opposite of slow is fast .
+one box was strong while the other was weak .
+at dawn the park felt hot , and at dusk it felt cold .
+in summer the pool felt hot , and in winter it felt cold .
+in the morning the park felt noisy , and at night it felt quiet .
+the hall was bright at dawn but dim at dusk .
+the road was full before noon but empty after sunset .
+before noon the street felt warm , and after sunset it felt cool .
+in summer the hall felt warm , and in winter it felt cool .
+before noon the garden felt clean , and after sunset it felt dirty .
+near and far mean opposite things .
+the field was warm in the morning but cool at night .
+the park was clean in summer but dirty in winter .
+in the morning the pool felt loud , and at night it felt quiet .
+it was not old at all ; it was young .
+the opposite of big is small .
+before noon the hall felt warm , and after sunset it felt cool .
+the opposite of soft is hard .
+big and small mean opposite things .
+the road was noisy in the morning but quiet at night .
+thick and thin mean opposite things .
+in the morning the street felt clean , and at night it felt dirty .
+at dawn the pool felt warm , and at dusk it felt cool .
+in summer the market felt hot , and in winter it felt cold .
+at dawn the park felt loud , and at dusk it felt quiet .
+early and late mean opposite things .
+the street was full before noon but empty after sunset .
+warm and cool mean opposite things .
+it was not warm at all ; it was cool .
+the street was hot at dawn but cold at dusk .
+the pool was loud in the morning but quiet at night .
+at dawn the street felt hot , and at dusk it felt cold .
+the opposite of sweet is sour .
+the pool was warm in the morning but cool at night .
+the coin is round and thin .
+the park was hot in summer but cold in winter .
+the field was warm at dawn but cool at dusk .
+before noon the road felt full , and after sunset it felt empty .
+the pool was loud at dawn but quiet at dusk .
+the market was full at dawn but empty at dusk .
+the road was loud at dawn but quiet at dusk .
+the opposite of sour is sweet .
+in the morning the market felt clean , and at night it felt dirty .
+one box was near while the other was far .
+in summer the street felt full , and in winter it felt empty .
+before noon the street felt clean , and after sunset it felt dirty .
+in summer the road felt clean , and in winter it felt dirty .
+the field was warm in summer but cool in winter .
+in summer the street felt noisy , and in winter it felt quiet .
+the opposite of near is far .
+the garden was hot in the morning but cold at night .
+the road was hot in the morning but cold at night .
+the park was full before noon but empty after sunset .
+in the morning the market felt hot , and at night it felt cold .
+in the morning the pool felt bright , and at night it felt dim .
+the street was warm at dawn but cool at dusk .
+in the morning the garden felt warm , and at night it felt cool .
+the opposite of rich is poor .
+the garden was noisy before noon but quiet after sunset .
+one box was bright while the other was dim .
+soft and hard mean opposite things .
+in summer the street felt bright , and in winter it felt dim .
+the road was clean before noon but dirty after sunset .
+the street was noisy before noon but quiet after sunset .
+the market was hot in summer but cold in winter .
+it was not near at all ; it was far .
+at dawn the pool felt loud , and at dusk it felt quiet .
+in summer the road felt noisy , and in winter it felt quiet .
+the field was clean in the morning but dirty at night .
+the street was clean before noon but dirty after sunset .
+the pool was full at dawn but empty at dusk .
+the market was bright at dawn but dim at dusk .
+before noon the park felt clean , and after sunset it felt dirty .
+before noon the market felt loud , and after sunset it felt quiet .
+it was not tall at all ; it was short .
+the field was noisy at dawn but quiet at dusk .
+the road was loud in the morning but quiet at night .
+at dawn the pool felt hot , and at dusk it felt cold .
+the garden was full before noon but empty after sunset .
+at dawn the field felt warm , and at dusk it felt cool .
+the park was warm in the morning but cool at night .
+at dawn the garden felt noisy , and at dusk it felt quiet .
+it was not soft at all ; it was hard .
+the opposite of strong is weak .
+the opposite of bright is dim .
+in the morning the garden felt bright , and at night it felt dim .
+in the morning the pool felt full , and at night it felt empty .
+the field was clean in summer but dirty in winter .
+the opposite of tall is short .
+at dawn the field felt clean , and at dusk it felt dirty .
+it was not fast at all ; it was slow .
+before noon the road felt loud , and after sunset it felt quiet .
+the opposite of fast is slow .
+in summer the garden felt warm , and in winter it felt cool .
+one box was clean while the other was dirty .
+in summer the field felt full , and in winter it felt empty .
+clean and dirty mean opposite things .
+the park was warm before noon but cool after sunset .
+before noon the street felt hot , and after sunset it felt cold .
+in summer the market felt noisy , and in winter it felt quiet .
+the opposite of early is late .
+the opposite of thin is thick .
+the field was hot in summer but cold in winter .
+the opposite of cool is warm .
+the garden was clean in the morning but dirty at night .
+in summer the garden felt hot , and in winter it felt cold .
+the garden was clean at dawn but dirty at dusk .
+the garden was bright in the morning but dim at night .
+before noon the pool felt warm , and after sunset it felt cool .
+one radio was loud while the other was quiet .
+a round plate is not square .

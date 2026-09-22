@@ -1,0 +1,43 @@
+{
+  "model": "experiments/expanded/run/model.pt",
+  "model_sha256": "aafa9d5ad9a80cb6c27a075baddce77cb55a0f315ffed3f94509729931bb2777",
+  "completed_steps": 3000,
+  "fresh_context_per_prompt": true,
+  "temperature": 0.8,
+  "max_tokens": 24,
+  "turns": [
+    {
+      "prompt": "the report about the nurse",
+      "seed": 2026,
+      "response": "explains the treatment in detail .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the pen is not purple . it is green . the pen is",
+      "seed": 2027,
+      "response": "green .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the shelf is above the sofa . the sofa is",
+      "seed": 2028,
+      "response": "below the shelf .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "what is the capital of france ?",
+      "seed": 2029,
+      "response": ".",
+      "unknown_prompt_words": [
+        "?",
+        "capital",
+        "france",
+        "what"
+      ],
+      "prompt_truncated": false
+    }
+  ]
+}

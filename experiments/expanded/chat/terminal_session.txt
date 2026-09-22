@@ -1,0 +1,16 @@
+$ expect experiments/expanded/chat/chat_demo.exp
+spawn .venv/bin/python chat.py --model experiments/expanded/run/model.pt --transcript experiments/expanded/chat/chat_transcript.json
+number of parameters: 0.13M
+Tiny language model: short continuations, not a general assistant.
+Each prompt starts fresh. Context: 48 tokens. Type /quit to exit.
+You: the report about the nurse
+Model: explains the treatment in detail .
+You: the pen is not purple . it is green . the pen is
+Model: green .
+You: the shelf is above the sofa . the sofa is
+Model: below the shelf .
+You: what is the capital of france ?
+Model: .
+Unknown words: ?, capital, france, what
+You: /quit
+Saved transcript: experiments/expanded/chat/chat_transcript.json
