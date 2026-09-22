@@ -43,6 +43,21 @@ The honest summary:
 
 **The 0.045% held-out UNK rate** comes from three of my teaching sentences that the random split sent to validation. Their words *visits*, *climbs* and *put* therefore never entered the training vocabulary. Every other word the model needed survived: 407 training types, all kept, well under the 509-type cap.
 
+
+### Why these four extension categories, and what I added
+
+In experiment 1, all 24 extension cases were unscorable: the words they need never appeared in training. I picked four categories whose gaps could be filled with ordinary words and short, varied sentences, without using the tests' stories or names. I left the other four untaught as **controls**. If the controls stay flat while the targets move, the change comes from the targeted teaching material, not from simply having more data.
+
+| Category (3 eval cases each) | Gap in the starter corpus | What I added (300 passages each, [files](corpus/extension/)) | Example passages |
+|---|---|---|---|
+| **Grammar** | No *is/are/was/were/am* agreement; no verb tenses; no animals | 12 nouns in singular and plural with a *be*-verb; 12 regular verbs in past / present / *-ing* with 10 subjects; *she* in every tense **except** after *yesterday* (the tested order) | `two frogs are hiding .` · `yesterday they kicked .` · `she is climbing now .` |
+| **Opposites** | No adjectives of temperature, amount or sound; no word *opposite* | `the opposite of X is Y` for 15 **untested** pairs; everyday contrast scenes for the tested pairs (hot/cold, full/empty, noisy/quiet) and for 3 bridge pairs that appear in both frames | `the opposite of hard is soft .` · `the market was hot in summer but cold in winter .` |
+| **Negation** | No *not*, no correction structure, no colours | Three-sentence correction stories: 14 objects × 10 colours; a past-tense variant; people (a non-eval cast) choosing one thing and not another | `the pen is not blue.it is green.the pen is green.` · `mia did not wear the jacket.she wore the scarf.mia wore the scarf.` |
+| **Spatial relations** | No *inside / above / below / beside / left / right / north / south* | Two-sentence inverse relations: inside ↔ contains, above ↔ below, beside ↔ beside, left ↔ right, north ↔ south, with objects **other than** each test's objects in its relation | `the coin is inside the tin.the tin contains the coin.` · `the clock is left of the chair.the chair is to the right of the clock.` |
+| Reference, sequence, everyday knowledge, categories/analogies | (same gap) | **Nothing: controls** | – |
+
+Each file samples evenly across its sentence frames, so a large frame can't drown out a small one. Every noun and one-off vocabulary line is always included, so no word needed for scoring is lost to sampling. The generator uses a fixed seed and reruns identically.
+
 ## 2. My three choices and prediction
 
 - **Corpus:** the starter corpus first, then the same corpus plus my four extension files. Only the data changed between experiments.
@@ -89,7 +104,7 @@ Sources: [starter history.json](experiments/starter/run/history.json) · [expand
 |---|---|
 | ![starter loss](experiments/starter/run/training_curves.svg) | ![expanded loss](experiments/expanded/run/training_curves.svg) |
 
-Both step-0 losses equal ln(vocabulary size): ln 136 = 4.91 and ln 410 = 6.02. At initialization the model spreads its probability almost evenly over every token. Almost all of the learning happens before step 1,500; the second half changes loss by less than 0.02. Loss stays near 0.7 rather than 0, because many slots are genuinely unpredictable. After *"the customer"*, six different verbs are equally correct. The expanded run's validation panel sits higher (0.83). Its random 20 validation passages include longer teaching stories, and those contain a few unpredictable choices (which colour, which object).
+Both step-0 losses equal ln(vocabulary size): ln 136 = 4.91 and ln 410 = 6.02. At initialization the model spreads its probability almost evenly over every token. Almost all of the learning happens before step 1,500; the second half changes loss by less than 0.02. Loss stays near 0.7 rather than 0, because many slots are genuinely unpredictable. After *"the customer"*, six different verbs are equally correct. The expanded run's validation panel sits higher (0.83 vs 0.68 on its training panel). I checked each passage's loss to find out why. Four of the 20 validation passages are my short teaching sentences, and three of them have the highest per-token losses in the panel: `the opposite of sweet is sour .` (1.90), `yesterday the boy talked .` (1.89) and `right now my friend is talking .` (1.59). In these sentences the adjective, subject or verb is a free choice among many taught words, and a short passage has few easy tokens (like *the* or *.*) to average that out. A 20-passage panel is sensitive to which passages it happens to draw.
 
 ### Samples: untrained, halfway, final
 
@@ -124,10 +139,27 @@ Temperature divides the logits before the softmax: p ∝ exp(logit / T). A low T
 Sources: [tokenization.json](experiments/starter/run/tokenization.json) · [inspection.json](experiments/starter/run/inspection.json) · [checkpoint.json](experiments/starter/run/checkpoint.json)
 
 1. **Text → tokens → IDs.** The first training passage is `today the school focused on lesson and the local professor .` It becomes the IDs `[1, 121, 118, 101, 42, 74, 61, 7, 118, 63, 88, 3, 2]`. `1` is `<BOS>`, `2` is `<EOS>` and `118` is *the*, which appears twice. The IDs are arbitrary row numbers from an alphabetical sort. The model is trained on input → target pairs shifted by one: `<BOS>`→*today*, *today*→*the*, … *professor*→*.*, *.*→`<EOS>`.
-2. **ID → vector.** *customer* has ID **28**. Its embedding is row 28 of the 136 × 64 table `wte`. Before training, its first six numbers were `[-0.0576, -0.0048, 0.0426, 0.0193, 0.0156, -0.0288]` (random, std 0.02). After training they are `[0.0366, -0.0182, 0.1330, 0.1060, 0.0630, 0.0189]`. All 64 numbers are in `inspection.json`. The vector moved by an L2 distance of 0.661. No coordinate has a named meaning. What changed is its **position relative to other words**: its nearest cosine neighbours went from *bus, educator, helped* (≈ 0.2, random) to ***shopper 0.978, client 0.977, buyer 0.977***. Those words fill the same template slots, so training pushed their vectors together. That is distributional learning, not human-style meaning.
+2. **ID → vector.** *customer* has ID **28**. Its embedding is row 28 of the 136 × 64 table `wte`. Before training, its first six numbers were `[-0.0576, -0.0048, 0.0426, 0.0193, 0.0156, -0.0288]` (random, std 0.02). After training they are `[0.0366, -0.0182, 0.1330, 0.1060, 0.0630, 0.0189]`. All 64 numbers are listed below and in `inspection.json`. The vector moved by an L2 distance of 0.661. No coordinate has a named meaning. What changed is its **position relative to other words**: its nearest cosine neighbours went from *bus, educator, helped* (≈ 0.2, random) to ***shopper 0.978, client 0.977, buyer 0.977***. Those words fill the same template slots, so training pushed their vectors together. That is distributional learning, not human-style meaning.
 3. **One real gradient and update.** At step 0, the loss gradient for `wte[28][0]` was **+0.000693**. A positive gradient means increasing this number would raise the loss. At the first step, the warmup learning rate was 1e-5 (0.001 × 1/100). AdamW's first step is roughly −lr × sign(gradient), because its momentum and variance estimates start from this single gradient, plus a tiny weight-decay term. The observed change was −0.0575919 → **−0.0576019**, a change of −0.0000100 = −lr. So the size of the gradient barely matters for Adam's first step; its sign does.
 4. **Probabilities before vs after, for the prefix "the customer".** Before training, the top prediction was *customer* at 1.6%, which is close to uniform (1/136 = 0.7%). After training: ***reviewed* 17.8%, *recommended* 17.1%, *ordered* 16.9%, *selected* 16.3%, *compared* 16.0%**. These are almost exactly 1/6 each. The corpus template is `the {buyer-word} {one of 6 verbs} the {product} after checking the price .`, so the model learned both *which* words can follow and *how evenly* they are spread.
 5. **Attention.** For the same prefix, block 1, head 1 gives the *customer* position these weights: **0.485 on `<BOS>`, 0.423 on *the*, 0.092 on itself**. Each position builds its next-token prediction from a weighted mix of the vectors at itself and **earlier** positions only. A causal mask sets future positions to −∞ before the softmax, so a prediction can never peek at the word it is supposed to predict. The expanded model's head instead puts 0.764 on *customer* itself. The same architecture learned a different use for this head.
+
+<details><summary><b>Starter run: all 64 numbers of <i>customer</i> (ID 28) before and after training</b></summary>
+
+```text
+before: [-0.0576, -0.0048, 0.0426, 0.0193, 0.0156, -0.0288, 0.0256, 0.0001, 0.0247, 0.0207, 0.0074, -0.0331, -0.0535, -0.0057, -0.0242, -0.0147, 0.0047, -0.0105, -0.0084, -0.0183, -0.0201, 0.0051, -0.0109, -0.0126, 0.0284, -0.0026, -0.0041, 0.0136, -0.0099, -0.0167, 0.0019, -0.0015, 0.016, -0.0057, -0.0007, -0.0013, -0.0073, -0.0009, 0.0015, -0.005, -0.029, 0.0181, -0.0073, -0.0054, 0.0156, -0.0045, 0.0416, 0.0524, 0.0226, -0.0154, -0.0251, -0.0068, 0.0294, -0.0025, 0.0298, -0.0228, -0.0302, 0.0064, 0.0505, 0.0075, -0.0107, 0.0247, -0.0145, 0.0132] 
+after:  [0.0366, -0.0182, 0.133, 0.106, 0.063, 0.0189, 0.1523, 0.0929, -0.0632, -0.0173, 0.0341, -0.0474, -0.0645, -0.0866, -0.145, -0.0359, -0.1569, -0.1503, -0.0076, -0.0707, -0.093, 0.0091, -0.0648, 0.0175, 0.0039, -0.0625, 0.1125, -0.0643, 0.052, -0.1567, -0.0706, 0.0617, -0.0318, 0.1414, 0.0913, 0.0565, 0.0196, -0.1348, 0.1223, -0.0338, 0.1187, 0.0046, -0.1344, 0.0529, -0.0376, -0.1031, 0.0203, 0.0381, -0.0198, -0.1507, 0.0303, -0.1206, 0.0166, 0.0778, 0.1181, 0.0557, 0.0934, 0.0026, 0.0371, 0.0756, 0.1185, 0.0144, 0.0913, -0.0746] 
+```
+</details>
+
+<details><summary><b>Expanded run: all 64 numbers of <i>customer</i> (ID 94) before and after training</b></summary>
+
+```text
+before: [-0.0377, 0.0028, 0.0178, -0.0093, -0.0067, 0.0349, 0.0047, -0.0031, 0.0182, 0.0213, -0.027, 0.0049, 0.0273, -0.0331, 0.0265, 0.0157, -0.0202, 0.0083, 0.0208, -0.0104, -0.0043, -0.0049, -0.0022, -0.0003, -0.0093, -0.0167, 0.0094, -0.0075, -0.036, -0.014, 0.0142, -0.0156, 0.0153, 0.0053, -0.0283, 0.0111, 0.0145, 0.0053, -0.0058, -0.0259, -0.0516, -0.0053, -0.0143, -0.0127, -0.0047, 0.006, -0.0303, -0.0094, -0.0123, -0.0021, 0.0388, 0.02, 0.0325, -0.0312, 0.0002, 0.0081, 0.0336, -0.0053, -0.0125, 0.0152, -0.0028, -0.0202, 0.031, -0.0051] 
+after:  [-0.0194, -0.0302, -0.0017, 0.0518, 0.0325, -0.046, -0.054, -0.149, 0.0732, 0.0259, -0.0036, 0.0318, 0.0905, -0.0672, -0.008, -0.0866, -0.1066, 0.1463, -0.0387, 0.1231, 0.0817, 0.1505, 0.0686, 0.0923, -0.1056, 0.0478, 0.0087, 0.0837, -0.098, -0.0437, 0.0054, 0.0263, -0.0901, -0.07, -0.0619, -0.0165, -0.0104, -0.1044, 0.0014, -0.0026, -0.1709, 0.0464, -0.0776, -0.0227, 0.0537, -0.0545, -0.0476, 0.0257, 0.1147, 0.0603, 0.0108, 0.0484, 0.0947, 0.0236, -0.0371, 0.1177, 0.1647, -0.0919, -0.0525, -0.1415, 0.0269, -0.0772, 0.1057, 0.0233] 
+```
+</details>
+
 
 ## 5. The 48 fixed language evals
 
@@ -157,6 +189,63 @@ Sources: [tokenization.json](experiments/starter/run/tokenization.json) · [insp
 | Coverage | 50.0% | 50.0% | 72.9% | 72.9% |
 
 The untrained rows show how much luck is possible with four choices: 22–38% of scorable cases. Coverage is identical before and after training in each experiment, because it depends only on the vocabulary, which is fixed before training. **More training can never raise coverage. Only new data can.**
+
+<details><summary><b>All 48 cases: trained starter vs trained expanded, with free continuations</b> (click to expand)</summary>
+
+| ID | Category | Prompt | Expected | Starter pick | Starter free text | Expanded pick | Expanded free text |
+|---|---|---|---|---|---|---|---|
+| lang_01 | domain_context | `the report about the customer explains the` | service | ✅ service | service in detail . | ✅ service | order in detail . |
+| lang_02 | domain_context | `the report about the merchandise explains the` | quality | ✅ quality | quality in detail . | ✅ quality | price in detail . |
+| lang_03 | domain_context | `the report about the mortgage explains the` | payment | ✅ payment | return in detail . | ✅ payment | return in detail . |
+| lang_04 | domain_context | `the report about the mango explains the` | juice | ✅ juice | fruit in detail . | ✅ juice | harvest in detail . |
+| lang_05 | domain_context | `the report about the bicycle explains the` | journey | ✅ journey | journey in detail . | ✅ journey | traffic in detail . |
+| lang_06 | domain_context | `the report about the application explains the` | security | ✅ security | security in detail . | ✅ security | security in detail . |
+| lang_07 | domain_context | `the report about the surgeon explains the` | patient | ✅ patient | treatment in detail . | ✅ patient | care in detail . |
+| lang_08 | domain_context | `the report about the tutor explains the` | lesson | ✅ lesson | lesson in detail . | ✅ lesson | student in detail . |
+| lang_09 | domain_place | `the team discussed the customer and the service at the` | store | ✅ store | store . | ✅ store | store . |
+| lang_10 | domain_place | `the team discussed the merchandise and the quality at the` | market | ✅ market | market . | ✅ market | market . |
+| lang_11 | domain_place | `the team discussed the mortgage and the payment at the` | bank | ✅ bank | bank . | ✅ bank | bank . |
+| lang_12 | domain_place | `the team discussed the mango and the juice at the` | kitchen | ✅ kitchen | kitchen . | ✅ kitchen | kitchen . |
+| lang_13 | domain_place | `the team discussed the bicycle and the journey at the` | station | ✅ station | station . | ✅ station | station . |
+| lang_14 | domain_place | `the team discussed the application and the security at the` | office | ✅ office | office . | ✅ office | office . |
+| lang_15 | domain_place | `the team discussed the surgeon and the patient at the` | hospital | ✅ hospital | hospital . | ✅ hospital | hospital . |
+| lang_16 | domain_place | `the team discussed the tutor and the lesson at the` | school | ✅ school | school . | ✅ school | school . |
+| lang_17 | new_wording | `our hospital discussed the nurse and the` | health | ✅ health | health at the hospital . | ✅ health | care at dusk . |
+| lang_18 | new_wording | `yesterday the school discussed the educator and the` | student | ❌ harvest | local lecturer . | ✅ student | inside the school . |
+| lang_19 | new_wording | `the bank report discussed the bond and the` | return | ❌ care | new investment . | ✅ return | with another loan . |
+| lang_20 | new_wording | `our kitchen report discussed the pear and the` | fruit | ✅ fruit | different pear . | ✅ fruit | green . |
+| lang_21 | new_wording | `the station report compared the bus and the` | route | ✅ route | important taxi . | ✅ route | important taxi . |
+| lang_22 | new_wording | `yesterday our office discussed the platform and the` | update | ❌ treatment | local website . | ✅ update | code . |
+| lang_23 | new_wording | `the store report discussed the subscriber and the` | support | ❌ health | important item . | ✅ support | store at beside the school . |
+| lang_24 | new_wording | `our market report compared the package and the` | delivery | ✅ delivery | local merchandise . | ✅ delivery | local offering . |
+| lang_25 | grammar | `one bird` | is | unscorable | the new customer with another client at the store . | ✅ is | is ready . |
+| lang_26 | grammar | `the dogs` | are | unscorable | the new educator with another educator at the school . | ✅ are | are sleeping . |
+| lang_27 | grammar | `yesterday she` | walked | unscorable | the new buyer with another client at the store . | ✅ walked | cooked . |
+| lang_28 | opposites | `the opposite of hot is` | cold | unscorable | [empty] | ❌ warm | cool . |
+| lang_29 | opposites | `the opposite of empty is` | full | unscorable | [empty] | ✅ full | clean . |
+| lang_30 | opposites | `the opposite of noisy is` | quiet | unscorable | [empty] | ❌ late | round . |
+| lang_31 | negation | `the box is not red . it is blue . the box is` | blue | unscorable | [empty] | ❌ red | application . |
+| lang_32 | negation | `ava did not buy tea . she bought milk . ava bought` | milk | unscorable | [empty] | unscorable | . she ordered the pear . |
+| lang_33 | negation | `the door is not open . it is closed . the door is` | closed | unscorable | [empty] | ❌ open | rich . |
+| lang_34 | reference | `maya lent a book to leo . leo thanked` | maya | unscorable | the station . | unscorable | . |
+| lang_35 | reference | `ella gave finn a pencil . the person who received the pencil was` | finn | unscorable | mentioned in the different mango yesterday . | unscorable | deposit . |
+| lang_36 | reference | `omar called nina . nina answered the call from` | omar | unscorable | the bank . | unscorable | the market . |
+| lang_37 | sequence | `first wash the cup . then dry it . the last action is` | dry | unscorable | [empty] | unscorable | inside the buyer . |
+| lang_38 | sequence | `lunch happens after breakfast . the earlier meal is` | breakfast | unscorable | [empty] | unscorable | inside it . |
+| lang_39 | sequence | `the train arrived before the bus . the vehicle that arrived later was the` | bus | unscorable | new bicycle focused on journey report yesterday . | unscorable | ready . |
+| lang_40 | spatial_relations | `the book is inside the bag . the bag contains the` | book | unscorable | new loan report yesterday . | ✅ book | letter . |
+| lang_41 | spatial_relations | `the lamp is above the desk . the desk is` | below | unscorable | [empty] | ✅ below | below the sock . |
+| lang_42 | spatial_relations | `the ball is left of the box . the box is to the` | right | unscorable | new banana focused on harvest at the different peach focused on fruit . | ❌ left | right of the truck . |
+| lang_43 | everyday_knowledge | `water freezes into` | ice | unscorable | the new program focused on data and security . | unscorable | the hall . |
+| lang_44 | everyday_knowledge | `a person uses an umbrella to stay` | dry | unscorable | [empty] | unscorable | . |
+| lang_45 | everyday_knowledge | `to see in a dark room we turn on a` | light | unscorable | kitchen . | unscorable | discussion of traffic . |
+| lang_46 | categories_and_analogies | `a robin is a bird . a salmon is a` | fish | unscorable | office . | unscorable | not of travel . |
+| lang_47 | categories_and_analogies | `a puppy grows into a dog . a kitten grows into a` | cat | unscorable | bank station focused on traffic helped us understand the different bicycle focused on traffic helped us understand the journey . | unscorable | baker is river . |
+| lang_48 | categories_and_analogies | `a carrot is a vegetable . an apple is a` | fruit | unscorable | kitchen . | unscorable | soup . |
+
+The untrained picks and continuations for both experiments are in the linked untrained CSV/JSON files.
+</details>
+
 
 ### Where the improvement came from: vocabulary, patterns, or both?
 
@@ -242,6 +331,19 @@ A single seed can't separate a real change from luck, so I retrained both corpor
 - **The limits:** exact-match and n-gram checks can't detect paraphrases or semantic overlap. I also looked at the eval categories while writing the teaching material, and re-inspected results afterwards. So this is a **public development benchmark**, not an unseen test of generalization. A generalization claim would need fresh tests that never guided my choices.
 
 **Why multi-sentence stories have no space after internal periods.** The notebook splits passages at every `.` followed by whitespace. Written normally, `The kite is not green. It is pink.` would become two separate one-sentence passages, and the model would never see a correction inside one context. Writing `the kite is not green.it is pink.the kite is pink.` keeps the story in one passage. It tokenizes to exactly the same tokens as `green . it`, which you can check in [corpus.txt](experiments/expanded/run/corpus.txt).
+
+
+### What stayed fixed, what training changed, what changed only at inference
+
+- **Fixed across all four result sets:**
+  - the nanoGPT architecture (2 blocks, 4 heads, 64-dimensional embeddings, 48-token context);
+  - seed 42, batch size 32, 3,000 steps, learning rate 0.001 with warmup and cosine decay;
+  - the 90/10 passage split within each experiment, and the fixed 20 + 20 loss panels;
+  - the sample settings (T = 0.8, seed 2026);
+  - the 48 eval cases, their choices, answer key and scoring, and the eval sampling settings (T = 0.8, seed 2026 + case index, 24 tokens).
+- **Changed between experiments:** only the data. Experiment 2 adds `corpus/extension/`. That changes the vocabulary (136 → 410), the number of embedding rows (111,872 → 129,408 parameters), the random initial weights and the split. This is why losses across the two corpora aren't directly comparable.
+- **Changed by training (untrained → trained within one experiment):** only the weights: every embedding row, attention projection, MLP and LayerNorm parameter. The vocabulary, and therefore eval coverage, was fixed *before* training. That is why coverage is identical in the untrained and trained rows.
+- **Changed only at inference, with no weight updates:** the temperature (0.3 / 0.8 / 1.2), the sampling seed, the chat prompts, and the prompts the eval runner feeds in. `run_evals.py` hashes the model before and after evaluating and raises an error if any weight changed.
 
 ## 6. Chat interface
 
