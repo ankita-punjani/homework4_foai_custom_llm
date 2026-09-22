@@ -60,11 +60,19 @@ Each file samples evenly across its sentence frames, so a large frame can't drow
 
 ## 2. My three choices and prediction
 
-- **Corpus:** the starter corpus first, then the same corpus plus my four extension files. Only the data changed between experiments.
-- **Training steps: 3,000.** One step is one AdamW update on 32 passages. 3,000 steps is about 96,000 passage samples, or about 23 passes over the starter training set. That is enough to fit fixed templates without mostly measuring over-training. A 10-step run checked the setup first ([smoke test](experiments/smoke_test/)): loss went 4.93 → 4.21, and every cell ran.
-- **Learning rate: 0.001**, with the notebook's 100-step warmup and cosine decay to 10%. A much larger rate can overshoot: loss spikes or goes non-finite, and early updates can wreck the random initialization. A much smaller rate leaves the model close to random after 3,000 updates.
+**Corpus:** the starter corpus first, then the same corpus plus my four extension files ([section 1](#why-these-four-extension-categories-and-what-i-added)). Only the data changed between the two experiments. The other two choices were the same both times.
 
-I wrote my predictions before each run. They are in the notebooks and in [experiments/starter/prediction.md](experiments/starter/prediction.md) and [experiments/expanded/prediction.md](experiments/expanded/prediction.md).
+### In my own words
+
+I expected the model to do really well on the 16 starter-pattern tests, since those use the exact sentence shapes it saw thousands of times in training, just with different nouns swapped in. The 8 reworded tests use the same words but in sentence shapes it hasn't seen before, so I expected it to get some right, but not all - it would have to generalize a little instead of just repeating memorized patterns.
+
+For the 24 extension tests (negation, opposites, spatial relations, etc.), I expected close to 0 correct. Not because the model would "think" badly, but because words like *not*, *opposite*, and *below* weren't in its vocabulary at all yet. You can't get a question right using a word you've never seen.
+
+I kept the suggested defaults: **3,000 training steps** and a **learning rate of 0.001**. With my corpus size, 3,000 steps means the model sees the full dataset about 23 times over (3,000 steps × 32 passages ≈ 96,000 passages, and there are 4,132 training passages), enough to learn the repeating templates without me having to guess a bigger number. I didn't raise the learning rate because too big a step size can make training unstable (the loss bounces around instead of going down). I didn't lower it either, because too small a rate would leave the model barely trained after only 3,000 steps.
+
+Before the real runs, a 10-step [smoke test](experiments/smoke_test/) checked that every notebook cell worked (loss 4.93 → 4.21). The notebook also applies a 100-step warmup and cosine decay to the learning rate, so 0.001 is its peak value, not a constant.
+
+**Which version is the "before training" prediction?** The prediction recorded in each executed notebook was written before that experiment trained. It is also saved as [experiments/starter/prediction.md](experiments/starter/prediction.md) and [experiments/expanded/prediction.md](experiments/expanded/prediction.md). The text above is my own explanation of the same expectations, written afterwards. I didn't paste it into the notebooks, so that the before-training record stays exactly as it was.
 
 | I expected… | I observed |
 |---|---|
@@ -72,7 +80,7 @@ I wrote my predictions before each run. They are in the notebooks and in [experi
 | Starter patterns mostly pass; new wording partly; extension 0/24 because of missing vocabulary | **16/16**, **4/8**, and **0/24, all 24 unscorable** |
 | *customer* moves toward *client / buyer / shopper* | Final cosine neighbours: **shopper 0.978, client 0.977, buyer 0.977** (initially bus, educator, helped at about 0.2) |
 | Expanded: 11 of 12 targeted cases scorable, controls still unscorable | **Exactly that.** 35/48 scorable. The only targeted case still unscorable is *ava*, because I used no eval names |
-| Expanded: copy/inverse patterns learnable; opposites the hardest | Spatial and grammar yes; opposites were hard as predicted. **Negation failed, which I did not expect.** The cause is explained in [section 6](#what-the-model-actually-learned-probes) |
+| Expanded: copy/inverse patterns learnable; opposites the hardest | Spatial and grammar yes; opposites were hard as predicted. **Negation failed, which I did not expect.** The cause is explained in [section 5](#what-the-model-actually-learned-probes) |
 
 ## 3. The runs
 
@@ -423,20 +431,45 @@ Each run writes a new timestamped folder in `llm_runs/`, which is git-ignored. I
 
 ## 8. What I learned
 
-1. **Corpus.** The corpus is the model's only source of knowledge. The starter corpus teaches eight topic families in eight fixed sentence frames, and nothing else: no negation, no spatial words, no *bird*. Held-out passages keep me honest about memorization. But since validation reuses the training templates, the low validation loss (0.71) shows fitting *within* templates, not general language ability.
-2. **Token, ID, vector, embedding.** A token is a unit of text (*customer*). Its ID is an arbitrary row number (28). Its vector is the 64 numbers stored in that row. "Embedding" is the name for the learned table of those vectors. Only the vector carries learned information, and even then only in relation to other vectors (*customer* ≈ *shopper* ≈ *client*).
-3. **Neural network and learning.** The weights (111,872 of them) turn a sequence of vectors into next-token scores, using attention, feed-forward layers with GELU, residual connections and LayerNorm. Loss is the average −log probability of the true next token. Backpropagation gives every weight a gradient, and AdamW nudges each weight against its gradient. I saw one such nudge: −0.0000100 on `wte[28][0]`. That repeated 3,000 times drove loss from 4.93 to 0.68.
-4. **Attention.** It mixes information from earlier positions, and a causal mask blocks future positions. That is why `the lamp is above the desk . the desk is` can use *above* from six tokens back to produce *below*.
-5. **Probabilities → text.** The final layer gives a probability for every vocabulary word. Generation samples one word, appends it and repeats until `<EOS>`. Temperature reshapes those probabilities at sampling time without touching the weights. Low T gave the same confident template three times; T = 1.2 produced a novel but false sentence.
-6. **Prediction vs outcome.** My starter predictions held. For the extension, the model learned *narrow* patterns: agreement and spatial inversion worked on new fillers, but negation and opposites failed whenever the answer word hadn't been seen in the answer slot. I can honestly conclude that new data added vocabulary and some patterns. I can't conclude that the model understands negation or opposites.
+### Following one word from text to a learned vector
+
+A computer can't read words directly, so every word first gets turned into a number. "Customer" became **token ID 28**, just a label, like a locker number ([tokenization.json](experiments/starter/run/tokenization.json)). That ID points to row 28 in a big table, and that row holds **64 numbers** (called an embedding). These numbers start out completely random ([all 64, before and after](#the-embedding-viewer-customer-before-and-after-training)).
+
+During training, every time "customer" showed up in a sentence, those 64 numbers got nudged slightly, depending on whether the model's guess was right or wrong. Because "customer," "shopper," "client," and "buyer" all show up in the exact same spots in my sentences, the model nudged their numbers in similar directions, not because it understands they mean similar things, just because it noticed they're swapped in and out of the same slots.
+
+By the end, those four words' vectors were almost identical: about **0.98 cosine similarity** (a way of measuring how "close" two vectors point, where 1.0 means identical direction and 0 means unrelated), up from about 0.2 before training. You can see this in the [embedding viewer screenshots](#the-embedding-viewer-customer-before-and-after-training). The honest conclusion: the model didn't learn what a customer is. It only learned that these four words get used the same way in this data. That's a pattern, not real understanding.
+
+### How the loss, gradient, and weight update actually worked
+
+**Loss** is a number that measures how surprised the model is by the real next word. High loss means it didn't see that word coming. It started at **4.93**, which is basically what you'd get from guessing randomly among the model's 136 known words. Training brought it down to **0.68** ([history.json](experiments/starter/run/history.json), [loss table](#loss)). It never hits zero, and that's fine and expected: after "the customer," several different verbs could correctly come next, so some uncertainty is baked into the task itself. The trained model gives five of them about 16–18% each.
+
+The **gradient** is the signal that tells each number which direction to move to make the loss smaller. For the first number in "customer"'s vector, the gradient was **+0.000693**, a small push saying "move down a bit" ([inspection.json](experiments/starter/run/inspection.json), `first_update`).
+
+The **optimizer** (called AdamW) is what actually makes that move happen. It shifted that number from **−0.0575919 to −0.0576019**, a step exactly the size of the learning rate at that moment: 0.00001, much smaller than the target 0.001, because training was still "warming up", a phase where the learning rate ramps up slowly instead of starting at full strength. One extra detail worth mentioning: on AdamW's very first update, the direction of the gradient matters more than its exact size, since the optimizer hasn't built up a sense yet of how big a step to take.
+
+That's the whole mechanism, just repeated an enormous number of times: tiny nudges like this, across **111,872 numbers** in the model, 3,000 times over. There's no separate "understanding" step. Learning here just is this repeated small-scale adjusting.
+
+### Why the negation test failed - and what the model actually learned instead
+
+The model did pick up a version of the negation pattern, just a narrower one than I hoped for. Given "the kite is not green. it is pink. the kite is," it correctly answers "pink" with **92% confidence**. It still answers "pink" with 90% confidence for an object it never saw in any negation story ("the crate is not green…"). See [probe_results.json](experiments/analysis/probe_results.json) and [the probe table](#what-the-model-actually-learned-probes).
+
+But when the correct answer was "blue" instead, it failed (only 11%), because in my training stories, "blue" never showed up in that "corrected color" spot. That's the key finding: the model didn't learn the actual rule, "repeat whatever word comes right after 'it is.'" It learned something much narrower: "repeat one of the specific colors I've seen used in this exact spot before." Blue was never in that spot, so it had no way to produce it there, no matter how well it seemed to handle negation with pink.
+
+The funny part is I caused this gap myself. So that no training sentence would copy a test question, I never used "red" as the color being denied, never used "blue" as the corrected color, and left "open"/"closed" out of the negation stories entirely. That is exactly the kind of precaution the assignment asks for. But those were exactly the words the tests needed to see in those spots. The lesson: being careful about leakage can accidentally hide the evidence you'd need to show that the model generalized instead of just memorized.
+
+### The other ideas, briefly
+
+- **Corpus and held-out data.** The corpus is the model's only source of knowledge. Held-out passages check fitting on sentences it never trained on, but they reuse the training templates, so the low validation loss (0.71) shows fitting *within* templates, not general language ability.
+- **Attention.** Each position mixes information from earlier positions only; a causal mask blocks the future. That is how `the lamp is above the desk . the desk is` can use *above* from six tokens back to produce *below* (94%).
+- **Probabilities → text, and temperature.** The final layer gives a probability for every vocabulary word. Generation samples one, appends it and repeats until `<EOS>`. Temperature reshapes those probabilities at sampling time without changing any weights. Low temperature repeated the same confident template, while 1.2 produced the new but false `near and sour mean opposite things .` ([temperature comparison](#temperature-same-model-same-seed-no-weight-updates)).
 
 ## 9. One limitation and my next experiment
 
-**Limitation (observed).** The model's "rules" are tied to the words it has seen in each slot. It copies *pink* in a negation story at 0.9 probability, but it can't copy *blue*, because *blue* never filled that slot in training. And it answered `the opposite of hot is` with *warm*. In the same way, it answered `what is the capital of france ?` with a lone `.`. It has no way to represent words it has never seen, and no knowledge beyond its 5,792 passages.
+The biggest surprise here wasn't about the model, it was about how easy it is to misread a score. My expanded-corpus model scored **8/8** on the reworded tests, compared to **4/8** for the starter model, which looked like clear proof that my new training data helped. But when I reran the starter model with three different random seeds (basically, three different random starting points), it scored **6 to 7 out of 8** on its own, with no new data at all ([seed check](#is-it-real-a-seed-check), [seed_check_summary.json](experiments/analysis/seed_check/seed_check_summary.json)). That means most of the improvement I saw was just luck from how that one training run happened to go, not a real effect of my new corpus. Checking across multiple seeds instead of trusting one lucky run is what makes a result actually trustworthy.
 
-**Next experiment.**
-- **Change:** a third corpus that varies the **answer slot** as well as the objects. Every colour and state (including open/closed) would appear on both sides of the negation stories. More pairs would get both a contrast sentence *and* an "opposite of" sentence. The frequency of rare words like *door* and *book* would go up. The eval stories would still be kept out, using the same leakage check.
-- **Prediction:** negation and opposites should become stable across seeds, while starter scores stay at 16/16. To test *generalization* rather than development-set fitting, I would first write a separate set of fresh probe cases with new words and never look at them while writing the corpus.
+**The real limitation** this shows: the model's "rules" are tied to the exact words and sentence spots it has seen before. It can look like it learned a general idea from one example, then fail on an almost identical case that just swaps in an unfamiliar word, exactly what happened with pink versus blue. The same limit shows up in chat: `what is the capital of france ?` gets just `.`, because four of its words are unknown ([chat](#6-chat-interface)).
+
+**My next experiment:** I'd rewrite the teaching stories so every color and state (not just the common ones) shows up in every sentence position, and I'd make rare words like "door" and "book" appear more often so they're not undertrained. Right now each appears in only one passage, and in one seed *door* ended up only in validation and dropped out of the vocabulary. I'd expect that to make negation and opposites work consistently across different random seeds instead of swinging based on luck. To really test for generalization, rather than a fancier kind of memorization, I'd also write a brand new set of test questions that I never look at while writing the training text, so my choices couldn't accidentally be shaped by what I already know the test checks for.
 
 ## Repository map
 
